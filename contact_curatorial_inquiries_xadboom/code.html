@@ -1,0 +1,806 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..600;1,9..40,300..600&amp;family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-container-highest": "#f1dfd9",
+          "on-primary-fixed": "#1c1b1b",
+          "primary-container": "#1c1b1b",
+          "primary-fixed": "#e5e2e1",
+          "primary-fixed-dim": "#c9c6c5",
+          "on-tertiary-fixed": "#241915",
+          "surface-container-high": "#f7e4de",
+          "surface": "#fff8f6",
+          "on-surface": "#231a16",
+          "error": "#ba1a1a",
+          "on-tertiary-container": "#92807a",
+          "on-surface-variant": "#444748",
+          "on-primary-fixed-variant": "#474646",
+          "surface-variant": "#f1dfd9",
+          "on-error": "#ffffff",
+          "error-container": "#ffdad6",
+          "outline-variant": "#c4c7c7",
+          "surface-container-lowest": "#ffffff",
+          "on-primary": "#ffffff",
+          "tertiary-fixed-dim": "#d7c2bb",
+          "inverse-primary": "#c9c6c5",
+          "outline": "#747878",
+          "on-tertiary-fixed-variant": "#52433e",
+          "surface-dim": "#e8d6d0",
+          "on-secondary-fixed": "#1e1b1a",
+          "on-error-container": "#93000a",
+          "secondary": "#635d5c",
+          "tertiary": "#000000",
+          "on-secondary": "#ffffff",
+          "surface-bright": "#fff8f6",
+          "surface-container-low": "#fff1ec",
+          "secondary-container": "#e6dedc",
+          "secondary-fixed": "#e9e1df",
+          "on-background": "#231a16",
+          "on-secondary-container": "#676160",
+          "on-primary-container": "#858383",
+          "surface-tint": "#5f5e5e",
+          "tertiary-container": "#241915",
+          "inverse-surface": "#392e2a",
+          "surface-container": "#fdeae4",
+          "primary": "#000000",
+          "on-secondary-fixed-variant": "#4b4644",
+          "on-tertiary": "#ffffff",
+          "secondary-fixed-dim": "#cdc5c3",
+          "background": "#fff8f6",
+          "inverse-on-surface": "#ffede7",
+          "tertiary-fixed": "#f4ded7"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-md": "1rem",
+          "space-3xl": "6rem",
+          "gutter-desktop": "2.5rem",
+          "space-lg": "1.5rem",
+          "space-sm": "0.5rem",
+          "space-xs": "0.25rem",
+          "space-xl": "2.5rem",
+          "margin": "1.25rem",
+          "gutter": "1.5rem",
+          "margin-desktop": "4rem",
+          "space-2xl": "4rem",
+          "margin-tablet": "2.5rem"
+        },
+        "fontFamily": {
+          "label-caps": [
+            "Space Grotesk"
+          ],
+          "headline-lg": [
+            "Space Grotesk"
+          ],
+          "headline-lg-mobile": [
+            "Space Grotesk"
+          ],
+          "curatorial-quote-mobile": [
+            "Newsreader"
+          ],
+          "body-md": [
+            "DM Sans"
+          ],
+          "display": [
+            "Space Grotesk"
+          ],
+          "headline-sm": [
+            "Space Grotesk"
+          ],
+          "label-md": [
+            "Space Grotesk"
+          ],
+          "body-lg": [
+            "DM Sans"
+          ],
+          "headline-md": [
+            "Space Grotesk"
+          ],
+          "display-mobile": [
+            "Space Grotesk"
+          ],
+          "curatorial-quote": [
+            "Newsreader"
+          ]
+        },
+        "fontSize": {
+          "label-caps": [
+            "0.6875rem",
+            {
+              "lineHeight": "1rem",
+              "letterSpacing": "0.12em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "3.5rem",
+            {
+              "lineHeight": "3.75rem",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg-mobile": [
+            "2.25rem",
+            {
+              "lineHeight": "2.5rem",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "400"
+            }
+          ],
+          "curatorial-quote-mobile": [
+            "1.375rem",
+            {
+              "lineHeight": "2rem",
+              "letterSpacing": "0",
+              "fontWeight": "400"
+            }
+          ],
+          "body-md": [
+            "0.9375rem",
+            {
+              "lineHeight": "1.5rem",
+              "letterSpacing": "0",
+              "fontWeight": "400"
+            }
+          ],
+          "display": [
+            "5rem",
+            {
+              "lineHeight": "5.25rem",
+              "letterSpacing": "-0.04em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "1.5rem",
+            {
+              "lineHeight": "2rem",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "label-md": [
+            "0.8125rem",
+            {
+              "lineHeight": "1.125rem",
+              "letterSpacing": "0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-lg": [
+            "1.125rem",
+            {
+              "lineHeight": "1.75rem",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "2.25rem",
+            {
+              "lineHeight": "2.75rem",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "display-mobile": [
+            "2.75rem",
+            {
+              "lineHeight": "3rem",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "400"
+            }
+          ],
+          "curatorial-quote": [
+            "1.875rem",
+            {
+              "lineHeight": "2.5rem",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.03)] border-b border-surface-dim"><div class="h-20 w-full px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="logo-sign.png" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XmgUVe-GHcPJrwgrESIU83ynGWqYUtMkMYl97O1hEKNgNLuVGTkS2LJr6ne_LDiK1AQ-7c0d5zXMEX22eX0C-ShV3gWNgJ8WW2vzY3iv6EK0EqDNpXdEjdnqq0kRC5ZoaRALiZ5_eF6ZSokQqSYget5oFl9qy0tWTMqTHCUi55zJN68IpMxAmylwe-k8X_UTF2Gu2pbCM8bBu12MG6ALTpIxqJ8vkUEAT48Bdz-pf6cOv79ifzpBqV8q2Cs9J4I4dxrct01fLzsQk"><a class="font-label-caps text-label-caps uppercase text-on-surface tracking-[0.2em] font-semibold" data-path="atelier" href="#">XADBOOM</a><span class="hidden lg:inline-block font-label-caps text-label-caps uppercase text-secondary border-l border-surface-dim pl-space-md tracking-widest">Atelier d'Architecture</span></div><nav class="hidden md:flex items-center gap-space-lg lg:gap-space-xl" data-active-classes="text-primary font-semibold border-b border-primary pb-0.5"><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="shop" href="#">Shop</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="designers" href="#">Designers</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="spec-library" href="#">Spec Library</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="journal" href="#">Journal</a><a aria-current="page" class="uppercase transition-colors tracking-widest text-primary font-semibold border-b border-primary pb-0.5" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md lg:gap-space-lg"><button aria-label="Search Archive" class="text-on-surface-variant hover:text-on-surface transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[20px]">search</span></button><a aria-label="Cart and allocations" class="flex items-center gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="cart" href="#"><span class="material-symbols-outlined text-[20px]">shopping_bag</span><span class="font-label-caps text-label-caps bg-surface-container-high text-on-surface px-space-xs py-0.5 border border-surface-dim font-medium">02</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full bg-surface-container">
+<!-- Minimalist Status & Temporal Bar -->
+<section class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop pt-space-xl pb-space-lg">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-space-md pb-space-md">
+<div class="flex items-center gap-space-sm text-secondary">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-caps text-label-caps uppercase tracking-[0.22em] text-on-surface">Atelier Protocol Active</span>
+<span class="text-secondary/40">/</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary">Mean Trade Response &lt; 3 Hours</span>
+</div>
+<div class="flex items-center gap-space-lg text-secondary font-label-caps text-label-caps uppercase tracking-widest">
+<span class="">ZRH <span class="text-on-surface font-medium" id="time-zrh">23:53</span></span>
+<span class="">·</span>
+<span class="">THR <span class="text-on-surface font-medium" id="time-thr">02:23</span></span>
+<span class="">·</span>
+<span class="">NYC <span class="text-on-surface font-medium" id="time-nyc">18:53</span></span>
+</div>
+</div>
+</section>
+<!-- Editorial Spatial Intro -->
+<section class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop pb-space-2xl">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-gutter-desktop items-end">
+<div class="lg:col-span-8 space-y-space-md">
+<span class="font-label-caps text-label-caps uppercase tracking-[0.25em] text-secondary block">Liaison &amp; Provenance Registry</span>
+<h1 class="font-display text-headline-lg lg:text-display text-on-surface tracking-tight font-normal leading-[1.05]">
+          Direct Curatorial Dialogue &amp; Acquisition Inquiry
+        </h1>
+</div>
+<div class="lg:col-span-4 lg:pb-space-xs">
+<p class="font-body-lg text-body-lg text-secondary leading-relaxed font-light">
+          Initiate dialogue for numbered physical editions, architectural specification packages, or private salon appointments in Zürich, Tehran, and New York.
+        </p>
+</div>
+</div>
+</section>
+<!-- Main Workstation: Form & Atelier Directory -->
+<section class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop pb-space-3xl">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-gutter-desktop items-start">
+<!-- Dominant Inquiry Interface -->
+<div class="lg:col-span-7 bg-surface-container-low p-space-lg md:p-space-2xl shadow-sm flex flex-col justify-between">
+<div>
+<!-- Typology Switcher -->
+<div class="space-y-space-sm mb-space-xl">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block">01 / Inquiry Typology</span>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs" id="typology-group">
+<button class="typology-pill active py-space-sm px-space-xs text-center font-label-caps text-label-caps uppercase tracking-wider transition-all bg-primary text-on-primary" data-type="acquisition" type="button">
+                Acquisition
+              </button>
+<button class="typology-pill py-space-sm px-space-xs text-center font-label-caps text-label-caps uppercase tracking-wider transition-all bg-surface-container text-on-surface hover:bg-surface-variant" data-type="spec" type="button">
+                Trade &amp; Spec
+              </button>
+<button class="typology-pill py-space-sm px-space-xs text-center font-label-caps text-label-caps uppercase tracking-wider transition-all bg-surface-container text-on-surface hover:bg-surface-variant" data-type="appointment" type="button">
+                Appointment
+              </button>
+<button class="typology-pill py-space-sm px-space-xs text-center font-label-caps text-label-caps uppercase tracking-wider transition-all bg-surface-container text-on-surface hover:bg-surface-variant" data-type="collaboration" type="button">
+                Curatorial
+              </button>
+</div>
+</div>
+<!-- Structured Form -->
+<form class="space-y-space-lg" onsubmit="event.preventDefault(); showConfirmation();">
+<div class="space-y-space-sm">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block">02 / Identity &amp; Credentials</span>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col space-y-space-xs">
+<label class="font-label-caps text-label-caps uppercase tracking-wider text-secondary" for="client-name">Full Name / Practice *</label>
+<input class="w-full bg-surface-container-lowest border border-surface-dim px-space-md py-space-sm font-body-md text-body-md text-on-surface placeholder:text-outline focus:bg-surface focus:outline-none transition-colors" id="client-name" placeholder="e.g. Herzog &amp; Partner / Elena Vance" required="" type="text">
+</div>
+<div class="flex flex-col space-y-space-xs">
+<label class="font-label-caps text-label-caps uppercase tracking-wider text-secondary" for="client-email">Official Email *</label>
+<input class="w-full bg-surface-container-lowest border border-surface-dim px-space-md py-space-sm font-body-md text-body-md text-on-surface placeholder:text-outline focus:bg-surface focus:outline-none transition-colors" id="client-email" placeholder="trade@practice.ch" required="" type="email">
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
+<div class="flex flex-col space-y-space-xs">
+<label class="font-label-caps text-label-caps uppercase tracking-wider text-secondary" for="client-phone">Direct Telephone</label>
+<input class="w-full bg-surface-container-lowest border border-surface-dim px-space-md py-space-sm font-body-md text-body-md text-on-surface placeholder:text-outline focus:bg-surface focus:outline-none transition-colors" id="client-phone" placeholder="+41 79 000 0000" type="tel">
+</div>
+<div class="flex flex-col space-y-space-xs">
+<label class="font-label-caps text-label-caps uppercase tracking-wider text-secondary" for="client-territory">Jurisdiction / Base</label>
+<input class="w-full bg-surface-container-lowest border border-surface-dim px-space-md py-space-sm font-body-md text-body-md text-on-surface placeholder:text-outline focus:bg-surface focus:outline-none transition-colors" id="client-territory" placeholder="Zürich, Switzerland" type="text">
+</div>
+</div>
+</div>
+<div class="space-y-space-sm pt-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block">03 / Structural Subject</span>
+<div class="flex flex-col space-y-space-xs">
+<label class="font-label-caps text-label-caps uppercase tracking-wider text-secondary" for="piece-interest">Physical Edition of Interest (Optional)</label>
+<div class="relative">
+<select class="w-full bg-surface-container-lowest border border-surface-dim px-space-md py-space-sm font-body-md text-body-md text-on-surface focus:bg-surface focus:outline-none appearance-none transition-colors cursor-pointer" id="piece-interest"><option value="">Select Monograph Object or Spec Cohort</option><option value="lumen-void">Lumen Void Lounge Chair (Alireza Taghaboni) — Ed. of 8</option><option value="tectonic-console">Tectonic Monolith Console (Mehrdad Zavareh) — Cast Basalt</option><option value="strata-low">Strata Porous Low Table (Farshid Moussavi) — Travertine Core</option><option value="bespoke-commission">Custom Site-Specific Architectural Commission</option><option value="full-portfolio">Complete Trade Spec Package (Full Access)</option></select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-secondary pointer-events-none text-[20px]">expand_more</span>
+</div>
+</div>
+</div>
+<div class="space-y-space-sm pt-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block">04 / Spatial Scope &amp; Timeline</span>
+<div class="flex flex-col space-y-space-xs">
+<label class="font-label-caps text-label-caps uppercase tracking-wider text-secondary" for="inquiry-scope">Monograph Notes / Project Requirements</label>
+<textarea class="w-full bg-surface-container-lowest border border-surface-dim px-space-md py-space-sm font-body-md text-body-md text-on-surface placeholder:text-outline focus:bg-surface focus:outline-none transition-colors resize-none" id="inquiry-scope" placeholder="Detail your architectural project timeline, material finish questions, or requested edition numbers..." rows="4"></textarea>
+</div>
+</div>
+<!-- Discrete CAD / BIM Dropzone -->
+<div class="space-y-space-xs">
+<label class="font-label-caps text-label-caps uppercase tracking-wider text-secondary block">Technical Documents (Revit / DWG / PDF)</label>
+<div class="w-full bg-surface-container/60 hover:bg-surface-container transition-colors p-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm text-center sm:text-left cursor-pointer group">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary group-hover:text-on-surface text-[22px]">attachment</span>
+<span class="font-body-md text-body-md text-secondary group-hover:text-on-surface">Attach architectural brief or drawing set (Max 48MB)</span>
+</div>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface underline">Browse Vault</span>
+</div>
+</div>
+<!-- Submit Execution -->
+<div class="pt-space-md flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs text-secondary font-label-caps text-label-caps uppercase tracking-widest">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span class="">End-to-End Encrypted Dossier</span>
+</div>
+<button class="bg-primary hover:bg-basalt text-surface py-space-md px-space-xl font-label-caps text-label-caps uppercase tracking-[0.2em] transition-all flex items-center justify-center gap-space-sm self-start sm:self-auto group" type="submit">
+<span class="">Send Curatorial Dispatch</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+<div class="hidden mt-space-lg p-space-md bg-surface text-on-surface flex items-center gap-space-sm" id="confirmation-banner">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider">Dispatch logged into atelier registry. A curator will respond within 3 hours.</span>
+</div>
+</div>
+<!-- Atelier Network & Direct Concierge -->
+<div class="lg:col-span-5 space-y-space-xl">
+<!-- Curatorial Plate Image -->
+<div class="relative w-full aspect-[4/3] bg-surface-container-low overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="A tranquil architectural atelier interior with poured lime-wash walls, soft morning shadow, a solitary monolithic dark basalt table by a master architect, minimal sculpture on floor, muted neutral palette with pale terra-cotta warmth and obsidian accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-uMx_jlt9y5wVwWRMFIl1cIl9fRu6wIyaIIf-pcIjWyG6TqLDuWDivDeKnKGeTIYNf70vDf0yKUVVUXKgrQRy3_4sft08WwWQwpbde3tLnQkdeCdFGVlu3z50d3B9YoPmV54dxAoGzLqM9xGj-Mq_xW6nMW7GdVSmfC5ZMS5GW93HDF1bDXv3n6B70iOOTlHeNmrw0K_gR4vm6AtDwV9qLU54CxKEBXFh70iO7ORO">
+<div class="absolute bottom-0 left-0 right-0 p-space-md bg-gradient-to-t from-surface-container-low via-surface-container-low/80 to-transparent flex items-end justify-between">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface">Atelier Sanctum / Vault Archive</span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">Plate No. 004</span>
+</div>
+</div>
+<!-- Geographic Presence List -->
+<div class="space-y-space-md">
+<span class="font-label-caps text-label-caps uppercase tracking-[0.25em] text-secondary block">Physical Sanctuaries &amp; Foundry</span>
+<!-- Zürich -->
+<div class="p-space-lg bg-surface-container-low shadow-sm space-y-space-xs transition-colors hover:bg-surface">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium">Zürich Atelier &amp; Vault</h3>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary">Central Archive</span>
+</div>
+<p class="font-body-md text-body-md text-secondary font-light">Talstrasse 14, 8001 Zürich, Switzerland</p>
+<div class="pt-space-xs flex flex-wrap gap-x-space-md gap-y-space-xs text-on-surface font-label-caps text-label-caps uppercase tracking-wider">
+<a class="hover:underline" href="mailto:zurich@xadboom.com">zurich@xadboom.com</a>
+<span class="">·</span>
+<a class="hover:underline" href="tel:+41442189020">+41 44 218 90 20</a>
+</div>
+<p class="text-secondary font-label-caps text-label-caps tracking-widest pt-space-xs">Hours: Mon–Fri 09:00–18:00 CET · Private Salons by Prior Notice</p>
+</div>
+<!-- Tehran -->
+<div class="p-space-lg bg-surface-container-low shadow-sm space-y-space-xs transition-colors hover:bg-surface">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium">Tehran Lab &amp; Foundry</h3>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary">Material R&amp;D</span>
+</div>
+<p class="font-body-md text-body-md text-secondary font-light">Lavasan Studio / Sharifi-ha District, Tehran, Iran</p>
+<div class="pt-space-xs text-on-surface font-label-caps text-label-caps uppercase tracking-wider">
+<a class="hover:underline" href="mailto:tehran@xadboom.com">tehran@xadboom.com</a>
+</div>
+<p class="text-secondary font-label-caps text-label-caps tracking-widest pt-space-xs">Visits exclusively for casting, stone selection, &amp; finish inspection</p>
+</div>
+<!-- New York -->
+<div class="p-space-lg bg-surface-container-low shadow-sm space-y-space-xs transition-colors hover:bg-surface">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium">New York Advisory</h3>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary">North America</span>
+</div>
+<p class="font-body-md text-body-md text-secondary font-light">Crosby Street, SoHo, NY 10012, United States</p>
+<div class="pt-space-xs text-on-surface font-label-caps text-label-caps uppercase tracking-wider">
+<a class="hover:underline" href="mailto:ny@xadboom.com">ny@xadboom.com</a>
+</div>
+<p class="text-secondary font-label-caps text-label-caps tracking-widest pt-space-xs">Curatorial salon, BIM specification &amp; material consultation</p>
+</div>
+</div>
+<!-- Spec Concierge Badge -->
+<div class="p-space-lg bg-surface-container-highest shadow-sm space-y-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-on-surface text-[20px]">architecture</span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface font-semibold">Immediate Spec Concierge</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant font-light">
+            Architects requiring uncompressed 3D models, Revit LOD 350+ families, or mechanical load calculations receive priority protocol clearance.
+          </p>
+<div class="pt-space-xs flex items-center justify-between">
+<a class="font-label-caps text-label-caps uppercase tracking-[0.18em] text-on-surface font-medium underline" href="mailto:spec@xadboom.com">spec@xadboom.com</a>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">Direct Channel</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Curatorial Credo Monograph Quote -->
+<section class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop py-space-3xl bg-surface-container-low">
+<div class="max-w-4xl mx-auto pl-space-lg md:pl-space-xl">
+<blockquote class="font-curatorial-quote text-curatorial-quote text-on-surface leading-snug">
+        “Every physical asset we manufacture exists in strictly numbered editions. Dialogue between specifier and atelier ensures uncompromised spatial resonance.”
+      </blockquote>
+<div class="mt-space-md flex items-center gap-space-md">
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-on-surface font-semibold">Xadboom Atelier Core</span>
+<span class="text-secondary">/</span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">Manifesto on Manufactured Presence</span>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Dynamic World Clocks
+  function updateAtelierTimes() {
+    const opts = { hour: '2-digit', minute: '2-digit', hour12: false };
+    const now = new Date();
+    
+    try {
+      const zrhTime = new Intl.DateTimeFormat('en-GB', { ...opts, timeZone: 'Europe/Zurich' }).format(now);
+      const thrTime = new Intl.DateTimeFormat('en-GB', { ...opts, timeZone: 'Asia/Tehran' }).format(now);
+      const nycTime = new Intl.DateTimeFormat('en-GB', { ...opts, timeZone: 'America/New_York' }).format(now);
+
+      const elZrh = document.getElementById('time-zrh');
+      const elThr = document.getElementById('time-thr');
+      const elNyc = document.getElementById('time-nyc');
+
+      if (elZrh) elZrh.textContent = zrhTime;
+      if (elThr) elThr.textContent = thrTime;
+      if (elNyc) elNyc.textContent = nycTime;
+    } catch(e) {}
+  }
+  updateAtelierTimes();
+  setInterval(updateAtelierTimes, 30000);
+
+  // Typology Switcher Micro-interaction
+  const pills = document.querySelectorAll('.typology-pill');
+  pills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      pills.forEach(p => {
+        p.classList.remove('bg-primary', 'text-on-primary');
+        p.classList.add('bg-surface-container', 'text-on-surface');
+      });
+      pill.classList.remove('bg-surface-container', 'text-on-surface');
+      pill.classList.add('bg-primary', 'text-on-primary');
+    });
+  });
+
+  // Feedback on submission
+  function showConfirmation() {
+    const banner = document.getElementById('confirmation-banner');
+    if (banner) {
+      banner.classList.remove('hidden');
+      banner.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }
+</script></main><footer class="w-full bg-surface-container-low border-t border-surface-dim"><div class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop pt-space-2xl pb-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter lg:gap-gutter-desktop pb-space-2xl border-b border-surface-dim"><div class="lg:col-span-4 flex flex-col justify-between pr-space-lg"><div class="space-y-space-md"><div class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-on-surface font-semibold">Xadboom Atelier</div><p class="font-curatorial-quote text-curatorial-quote-mobile text-secondary leading-relaxed">"Architecture as sovereign tactile medium. Limited structural expressions and monolithic physical assets produced in singular provenance."</p></div><div class="mt-space-lg font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Edition Registry · Vol. 04 / 2025</div></div><div class="lg:col-span-2 space-y-space-md"><div class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface font-semibold">Discover</div><ul class="space-y-space-sm font-label-caps text-label-caps uppercase tracking-wider"><li data-path="shop" class=""><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="shop" href="#">Acquisitions</a></li><li data-path="designers" class=""><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="designers" href="#">Master Architects</a></li><li data-path="rare-editions" class=""><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="rare-editions" href="#">Rare Editions</a></li><li data-path="exhibitions" class=""><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="exhibitions" href="#">Monographs</a></li></ul></div><div class="lg:col-span-2 space-y-space-md"><div class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface font-semibold">Spec Tools</div><ul class="space-y-space-sm font-label-caps text-label-caps uppercase tracking-wider"><li data-path="spec-library" class=""><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="spec-library" href="#">BIM &amp; CAD Models</a></li><li data-path="material-certificates" class=""><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="material-certificates" href="#">Stone Certificates</a></li><li data-path="provenance-chain" class=""><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="provenance-chain" href="#">Custody Ledgers</a></li><li data-path="freight-logistics" class=""><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="freight-logistics" href="#">Secure Freight</a></li></ul></div><div class="lg:col-span-4 space-y-space-md"><div class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface font-semibold">Dispatch Inquiry</div><p class="font-body-md text-body-md text-secondary">Direct notifications for closed architectural drops and stone releases.</p><form class="flex items-center border-b border-on-surface pt-space-sm pb-space-xs"><input class="w-full bg-transparent font-label-caps text-label-caps uppercase tracking-widest placeholder:text-outline text-on-surface focus:outline-none" placeholder="ARCHITECT@OFFICE.COM" type="email"><button aria-label="Submit Inquiry" class="text-on-surface hover:text-secondary transition-colors pl-space-sm" type="submit"><span class="material-symbols-outlined text-[18px]">arrow_forward</span></button></form><div class="pt-space-md flex flex-wrap gap-x-space-md gap-y-space-xs font-label-caps text-label-caps uppercase tracking-widest text-secondary"><span class="">Zürich</span><span class="">·</span><span class="">Tehran</span><span class="">·</span><span class="">New York</span></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md"><div class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">© 2025 XADBOOM COLLECTIVE. ALL RIGHTS RESERVED.</div><div class="flex items-center gap-space-lg font-label-caps text-label-caps uppercase tracking-wider text-secondary"><a class="hover:text-on-surface transition-colors" data-path="privacy" href="#">Confidentiality</a><a class="hover:text-on-surface transition-colors" data-path="terms" href="#">Atelier Terms</a><a class="hover:text-on-surface transition-colors" data-path="legal" href="#">Authentication</a></div></div></div></footer>
+
+
+<!-- BEGIN: Xadboom Unified Navigation & Cart Lock Engine -->
+<div id="xadboom-cart-drawer" style="display:none;position:fixed;top:0;right:0;bottom:0;width:100%;max-width:440px;background:#FFF8F6;box-shadow:-12px 0 40px rgba(35,26,22,0.2);z-index:100000;border-left:1px solid #D8C3BC;font-family:'DM Sans',sans-serif;color:#1C1917;flex-direction:column;">
+  <!-- Drawer Header -->
+  <div style="padding:18px 24px;border-bottom:1px solid #D8C3BC;display:flex;align-items:center;justify-content:space-between;background:#ECDAD4;">
+    <div style="display:flex;align-items:center;gap:10px;">
+      <span style="width:8px;height:8px;border-radius:50%;background:#0A0A0A;"></span>
+      <h3 style="margin:0;font-family:'Space Grotesk',monospace;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;">Allocation Bag &amp; Reservation</h3>
+    </div>
+    <button id="xadboom-cart-close" style="background:transparent;border:0;font-size:18px;cursor:pointer;color:#1C1917;padding:4px 8px;font-family:monospace;" aria-label="Close Bag">✕</button>
+  </div>
+
+  <!-- 15-Minute Reservation Lock Banner -->
+  <div id="xadboom-lock-banner" style="background:#FFF1EC;border-bottom:1px solid #E2CECB;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;">
+    <div style="display:flex;align-items:center;gap:8px;">
+      <span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#844C38;animation:pulse 1.5s infinite;"></span>
+      <span style="font-family:'Space Grotesk',monospace;font-size:10px;text-transform:uppercase;letter-spacing:0.08em;color:#844C38;font-weight:600;">15-MIN LOCK ACTIVE</span>
+    </div>
+    <div id="xadboom-countdown" style="font-family:'Space Grotesk',monospace;font-size:12px;font-weight:700;color:#0A0A0A;letter-spacing:0.08em;">
+      14:45
+    </div>
+  </div>
+
+  <!-- Drawer Body -->
+  <div id="xadboom-cart-items" style="flex:1;overflow-y:auto;padding:24px;">
+    <div style="border:1px solid #E2CECB;border-radius:12px;padding:16px;background:#FFF1EC;margin-bottom:16px;">
+      <div style="display:flex;gap:14px;align-items:start;">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwnCJLKLvhum3BMndM9-PH1frfIJppinysZwrLcPhUH0AV8GsVaqmZzF_M8GR6ESpCju6fnmTN7DFWKy-DiVCqZTxDLyhEPeC_IK_4w1soWZTFD96uhfpWmYlACXw6RMIu_Ap3-uZEyc31P9IHs_fpfl-sHnMMRmb6sBFJmXzGKlrdhEMF1NJT0AXLqQslhbsDqWiBXrgLGrfsPHfnJUGqunRKntyorrnZb5qlDbMt" style="width:72px;height:72px;object-fit:cover;border-radius:8px;border:1px solid #D8C3BC;">
+        <div style="flex:1;">
+          <span style="font-family:Space Grotesk,monospace;font-size:9px;color:#844C38;text-transform:uppercase;letter-spacing:0.1em;font-weight:700;display:block;">EDITION ALLOCATION</span>
+          <h4 style="margin:2px 0 4px;font-size:14px;font-weight:700;">Lumen Void Lounge Chair</h4>
+          <p style="margin:0;font-size:11px;color:#7A6E69;">Alireza Taghaboni · Solid Walnut &amp; Bouclé</p>
+          <div style="margin-top:8px;display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-family:Space Grotesk,monospace;font-size:10px;background:#0A0A0A;color:#fff;padding:2px 6px;border-radius:4px;">Ed. 03 / 12</span>
+            <span style="font-family:Space Grotesk,monospace;font-size:13px;font-weight:700;">$9,400</span>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:12px;padding-top:10px;border-top:1px dashed #D8C3BC;font-size:10.5px;color:#554B47;display:flex;align-items:center;gap:6px;">
+        <span>🛡️</span>
+        <span>Cryptographic Provenance Token: <strong>XB-PROV-LV-0312</strong></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Drawer Footer -->
+  <div style="padding:20px 24px;border-top:1px solid #D8C3BC;background:#FFF1EC;">
+    <div style="display:flex;justify-content:space-between;margin-bottom:8px;font-size:11px;font-family:'Space Grotesk',monospace;text-transform:uppercase;letter-spacing:0.06em;color:#7A6E69;">
+      <span>Atelier White-Glove Crate</span>
+      <span style="color:#0A0A0A;font-weight:600;">COMPLIMENTARY</span>
+    </div>
+    <div style="display:flex;justify-content:space-between;margin-bottom:16px;font-size:14px;font-weight:700;">
+      <span style="font-family:'Space Grotesk',monospace;text-transform:uppercase;letter-spacing:0.06em;">Total Acquisition</span>
+      <span id="xadboom-cart-total" style="font-family:'Space Grotesk',monospace;">$9,400</span>
+    </div>
+    <button id="xadboom-checkout-btn" style="width:100%;padding:14px;background:#0A0A0A;color:#FFF8F6;border:0;border-radius:9999px;font-family:'Space Grotesk',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;cursor:pointer;margin-bottom:8px;transition:opacity 0.2s;">
+      PROCEED TO ALLOCATION CHECKOUT ↗
+    </button>
+    <button id="xadboom-release-btn" style="width:100%;padding:8px;background:transparent;color:#7A6E69;border:0;font-family:'Space Grotesk',monospace;font-size:10px;text-transform:uppercase;letter-spacing:0.08em;cursor:pointer;">
+      Release Vault Lock Back to Inventory
+    </button>
+  </div>
+</div>
+<div id="xadboom-cart-backdrop" style="display:none;position:fixed;inset:0;background:rgba(28,25,23,0.4);backdrop-filter:blur(2px);z-index:99999;"></div>
+
+<!-- Quick Architectural Switcher Pill (Beneath Container Showing All 14 Pages) -->
+<div id="xadboom-quick-nav" style="position:fixed;bottom:14px;left:50%;transform:translateX(-50%);z-index:99998;font-family:'Space Grotesk',sans-serif;-webkit-font-smoothing:antialiased;max-width:96vw;">
+  <div style="box-shadow:0 8px 32px rgba(35,26,22,0.22);border:1px solid #D8C3BC;background:rgba(255,248,246,0.97);backdrop-filter:blur(16px);border-radius:9999px;padding:6px 14px;display:flex;align-items:center;gap:10px;overflow-x:auto;">
+    
+    <div style="display:flex;align-items:center;gap:7px;flex-shrink:0;">
+      <span style="width:7px;height:7px;border-radius:50%;background:#844C38;display:inline-block;"></span>
+      <span style="font-size:10.5px;font-family:'Space Grotesk',monospace;text-transform:uppercase;letter-spacing:0.12em;font-weight:700;color:#1C1917;">Xadboom</span>
+      <span style="font-size:9.5px;color:#7A6E69;font-family:monospace;background:#ECDAD4;padding:1px 6px;border-radius:4px;">Curatorial Inquiries</span>
+    </div>
+
+    <div id="xadboom-nav-expanded" style="display:flex;align-items:center;gap:8px;border-left:1px solid #D8C3BC;padding-left:10px;flex-shrink:0;">
+      <div style="display:flex;align-items:center;gap:3px;">
+        <span style="font-size:9px;text-transform:uppercase;letter-spacing:0.08em;color:#7A6E69;font-family:monospace;margin-right:2px;">Store:</span>
+        <a href="../index.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Curated Home</a><a href="../curated_architectural_assets_physical_typologies_xadboom/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Typologies Catalog</a><a href="../lumen_void_lounge_chair_product_detail_xadboom/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Lumen Void Chair</a><a href="../designers_collaborating_visionaries_xadboom_1/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Visionaries (1)</a><a href="../designers_collaborating_visionaries_xadboom_2/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Visionaries (2)</a><a href="../contact_curatorial_inquiries_xadboom/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;background:#0A0A0A;color:#FFF8F6;font-weight:700;">Curatorial Inquiries</a>
+      </div>
+      <div style="height:14px;width:1px;background:#D8C3BC;"></div>
+      <div style="display:flex;align-items:center;gap:3px;">
+        <span style="font-size:9px;text-transform:uppercase;letter-spacing:0.08em;color:#844C38;font-family:monospace;margin-right:2px;">Admin:</span>
+        <a href="../xadboom_atelier_admin_operations_inventory_lock_harmonized/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Operations & Ledger</a><a href="../pieces_catalog_xadboom_atelier_admin/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Pieces Catalog</a><a href="../add_new_piece_xadboom_atelier_admin/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">+ Add Piece</a><a href="../categories_typologies_xadboom_atelier_admin/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Categories</a><a href="../designers_collaborators_xadboom_atelier_admin/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Collaborators</a><a href="../orders_dispatches_xadboom_atelier_admin/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Orders & Dispatches</a><a href="../inquiries_forms_xadboom_atelier_admin/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Inquiries & Forms</a><a href="../users_accounts_xadboom_atelier_admin/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Users & Accounts</a>
+      </div>
+    </div>
+
+    <!-- Bag Opener Pill -->
+    <button id="xadboom-open-cart-pill" style="background:#0A0A0A;color:#FFF8F6;border:0;border-radius:9999px;padding:3px 10px;font-size:10px;font-family:monospace;font-weight:700;letter-spacing:0.06em;cursor:pointer;display:flex;align-items:center;gap:4px;flex-shrink:0;">
+      <span>BAG</span>
+      <span id="xadboom-pill-cart-count" style="background:#844C38;border-radius:50%;padding:1px 5px;font-size:9px;">1</span>
+    </button>
+
+    <button id="xadboom-nav-toggle" style="background:#ECDAD4;border:1px solid #D8C3BC;border-radius:9999px;padding:3px 8px;font-size:10px;font-family:monospace;cursor:pointer;color:#1C1917;font-weight:600;flex-shrink:0;" title="Toggle Bar">
+      ▾
+    </button>
+  </div>
+</div>
+
+<script>
+(function() {
+  // Navigation Bar Collapse Toggle
+  var expanded = document.getElementById('xadboom-nav-expanded');
+  var toggle = document.getElementById('xadboom-nav-toggle');
+  if (toggle && expanded) {
+    var isCollapsed = localStorage.getItem('xadboom_nav_collapsed') === 'true';
+    if (isCollapsed) {
+      expanded.style.display = 'none';
+      toggle.innerText = '▴ All Pages';
+    }
+    toggle.addEventListener('click', function() {
+      if (expanded.style.display === 'none') {
+        expanded.style.display = 'flex';
+        toggle.innerText = '▾';
+        localStorage.setItem('xadboom_nav_collapsed', 'false');
+      } else {
+        expanded.style.display = 'none';
+        toggle.innerText = '▴ All Pages';
+        localStorage.setItem('xadboom_nav_collapsed', 'true');
+      }
+    });
+  }
+
+  // Cart Drawer Logic
+  var drawer = document.getElementById('xadboom-cart-drawer');
+  var backdrop = document.getElementById('xadboom-cart-backdrop');
+  var closeBtn = document.getElementById('xadboom-cart-close');
+  var openPill = document.getElementById('xadboom-open-cart-pill');
+  var countdownEl = document.getElementById('xadboom-countdown');
+  var itemsContainer = document.getElementById('xadboom-cart-items');
+  var totalEl = document.getElementById('xadboom-cart-total');
+  var pillCount = document.getElementById('xadboom-pill-cart-count');
+  var checkoutBtn = document.getElementById('xadboom-checkout-btn');
+  var releaseBtn = document.getElementById('xadboom-release-btn');
+
+  function openCart() {
+    if (drawer && backdrop) {
+      drawer.style.display = 'flex';
+      backdrop.style.display = 'block';
+    }
+  }
+
+  function closeCart() {
+    if (drawer && backdrop) {
+      drawer.style.display = 'none';
+      backdrop.style.display = 'none';
+    }
+  }
+
+  if (closeBtn) closeBtn.addEventListener('click', closeCart);
+  if (backdrop) backdrop.addEventListener('click', closeCart);
+  if (openPill) openPill.addEventListener('click', openCart);
+
+  // Hook all existing "Bag" buttons in headers
+  document.querySelectorAll('button, a').forEach(function(el) {
+    var txt = (el.innerText || '').toLowerCase();
+    if (txt.includes('bag') && !el.id.includes('xadboom')) {
+      el.addEventListener('click', function(e) {
+        e.preventDefault();
+        openCart();
+      });
+    }
+  });
+
+  // 15-Minute Countdown Timer
+  var remainingSeconds = 885;
+  setInterval(function() {
+    if (remainingSeconds > 0) {
+      remainingSeconds--;
+      var m = Math.floor(remainingSeconds / 60);
+      var s = remainingSeconds % 60;
+      if (countdownEl) {
+        countdownEl.innerText = (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s;
+      }
+    } else {
+      if (countdownEl) countdownEl.innerText = '00:00 (EXPIRED)';
+    }
+  }, 1000);
+
+  // Release lock
+  if (releaseBtn) {
+    releaseBtn.addEventListener('click', function() {
+      if (itemsContainer) {
+        itemsContainer.innerHTML = '<div style="text-align:center;padding:40px 10px;color:#7A6E69;font-family:monospace;font-size:12px;">ALLOCATION HOLD RELEASED BACK TO VAULT.<br><br><button onclick="location.reload()" style="padding:8px 16px;background:#0A0A0A;color:#fff;border-radius:9999px;border:0;font-size:11px;cursor:pointer;">RESERVE ANOTHER PIECE ↗</button></div>';
+      }
+      if (totalEl) totalEl.innerText = '$0';
+      if (pillCount) pillCount.innerText = '0';
+    });
+  }
+
+  // Checkout action
+  if (checkoutBtn) {
+    checkoutBtn.addEventListener('click', function() {
+      checkoutBtn.innerText = 'DISPATCHING TO LEDGER...';
+      setTimeout(function() {
+        if (itemsContainer) {
+          itemsContainer.innerHTML = 
+            '<div style="text-align:center;padding:30px 10px;">' +
+              '<div style="width:48px;height:48px;border-radius:50%;background:#0A0A0A;color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:22px;">✓</div>' +
+              '<h4 style="font-family:Space Grotesk,monospace;font-size:15px;margin:0 0 8px;text-transform:uppercase;">ACQUISITION CONFIRMED</h4>' +
+              '<p style="font-size:12px;color:#7A6E69;line-height:1.5;">Order: XB-DISPATCH-948210<br>Certificate: PROV-CERT-LV0312</p>' +
+              '<p style="font-size:11px;background:#FFF1EC;padding:10px;border-radius:8px;border:1px solid #D8C3BC;margin-top:16px;">Curatorial crate scheduled for dual-signed courier dispatch. Provenance ledger synchronized.</p>' +
+            '</div>';
+        }
+        if (totalEl) totalEl.innerText = '$0';
+        if (pillCount) pillCount.innerText = '0';
+        checkoutBtn.style.display = 'none';
+        if (releaseBtn) releaseBtn.style.display = 'none';
+      }, 500);
+    });
+  }
+
+  // Hook "ACQUIRE / RESERVE" buttons
+  document.querySelectorAll('button, a').forEach(function(el) {
+    var txt = (el.innerText || '').toLowerCase();
+    if (txt.includes('acquire') || txt.includes('reserve') || txt.includes('the collection') || txt.includes('take allocation')) {
+      if (el.getAttribute('href') && (el.getAttribute('href').includes('catalog') || el.getAttribute('href').startsWith('#'))) return;
+      el.addEventListener('click', function(e) {
+        e.preventDefault();
+        openCart();
+      });
+    }
+  });
+
+  // Client-side Architectural Spec Download (CSV & OBJ generator)
+  function downloadFile(content, fileName, mimeType) {
+    var blob = new Blob([content], { type: mimeType });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = fileName;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }
+
+  document.querySelectorAll('button, a').forEach(function(el) {
+    var txt = (el.innerText || '').toLowerCase();
+    if (txt.includes('spec') || txt.includes('3d') || txt.includes('tear sheet')) {
+      if (!el.getAttribute('href') || el.getAttribute('href') === '#' || el.getAttribute('href').startsWith('#spec')) {
+        el.addEventListener('click', function(e) {
+          e.preventDefault();
+          var csv = "XADBOOM CURATED INTERIOR ARCHITECTURE — SPECIFICATION SHEET\n" +
+            "Archive ID,LV-0312\n" +
+            "Piece Title,Lumen Void Lounge Chair\n" +
+            "Collaborating Architect,Alireza Taghaboni\n" +
+            "Affiliated Studio,NextOffice\n" +
+            "Typology,Seating & Lounges\n" +
+            "Materials / Substrates,Solid Carved Iranian Walnut & Bouclé Wool\n" +
+            "Standard Dimensions,840 × 920 × 760 mm\n" +
+            "Net Weight,28 kg\n" +
+            "Textile Martindale Rating,65000 Cycles\n" +
+            "Edition Run,03 / 12 (3 Available)\n" +
+            "Atelier Crate Logistics,Rigid Plywood Museum Crate / Shockwatch Monitored\n" +
+            "Provenance Node,Tehran Atelier / Zurich Vault\n" +
+            "Standards,ISO 9001 / BIM 3D Lightweight Compatible (.OBJ / .GLB)\n";
+          downloadFile(csv, "Xadboom_Spec_LV0312_Lumen_Void.csv", "text/csv");
+        });
+      }
+    }
+  });
+
+  // Client-side Contact & Inquiry form submission with feedback
+  document.querySelectorAll('form').forEach(function(form) {
+    form.addEventListener('submit', function(e) {
+      var emailInput = form.querySelector('input[type="email"]');
+      if (emailInput && !form.getAttribute('action')) {
+        e.preventDefault();
+        var submitBtn = form.querySelector('button[type="submit"]') || form.querySelector('button');
+        var originalText = submitBtn ? submitBtn.innerText : 'Submit';
+        if (submitBtn) submitBtn.innerText = 'REGISTERING INQUIRY...';
+        setTimeout(function() {
+          if (submitBtn) submitBtn.innerText = '✓ INQUIRY REGISTERED (SLA: 3H)';
+          alert('Your curatorial inquiry has been registered with the Xadboom Atelier desk. Reference: INQ-2026. Curator SLA response time: 3 hours.');
+          if (submitBtn) submitBtn.innerText = originalText;
+        }, 400);
+      }
+    });
+  });
+
+  // Wire Admin Sidebar relative links so they work on GitHub Pages
+  var rootRel = '../';
+  document.querySelectorAll('nav [data-path]').forEach(function(el) {
+    var p = el.getAttribute('data-path');
+    var map = {
+      'overview': rootRel + 'xadboom_atelier_admin_operations_inventory_lock_harmonized/code.html',
+      'pieces-catalog': rootRel + 'pieces_catalog_xadboom_atelier_admin/code.html',
+      'curatorial-archives': rootRel + 'categories_typologies_xadboom_atelier_admin/code.html',
+      'acquisitions': rootRel + 'orders_dispatches_xadboom_atelier_admin/code.html',
+      'provenance-records': rootRel + 'inquiries_forms_xadboom_atelier_admin/code.html',
+      'settings': rootRel + 'users_accounts_xadboom_atelier_admin/code.html'
+    };
+    if (map[p]) el.setAttribute('href', map[p]);
+  });
+
+  document.querySelectorAll('aside a, nav a').forEach(function(a) {
+    var txt = (a.innerText || '').trim();
+    if (txt.includes('Overview & Dashboard')) a.setAttribute('href', rootRel + 'xadboom_atelier_admin_operations_inventory_lock_harmonized/code.html');
+    else if (txt.includes('Pieces Catalog')) a.setAttribute('href', rootRel + 'pieces_catalog_xadboom_atelier_admin/code.html');
+    else if (txt.includes('Categories')) a.setAttribute('href', rootRel + 'categories_typologies_xadboom_atelier_admin/code.html');
+    else if (txt.includes('Designers & Collaborators')) a.setAttribute('href', rootRel + 'designers_collaborators_xadboom_atelier_admin/code.html');
+    else if (txt.includes('Orders & Dispatches')) a.setAttribute('href', rootRel + 'orders_dispatches_xadboom_atelier_admin/code.html');
+    else if (txt.includes('Users & Accounts')) a.setAttribute('href', rootRel + 'users_accounts_xadboom_atelier_admin/code.html');
+    else if (txt.includes('Inquiries & Forms')) a.setAttribute('href', rootRel + 'inquiries_forms_xadboom_atelier_admin/code.html');
+  });
+
+  // Wire "+ Add New Piece" button
+  document.querySelectorAll('button, a').forEach(function(btn) {
+    var txt = (btn.innerText || '').trim();
+    if (txt.includes('Add New Piece')) {
+      btn.style.cursor = 'pointer';
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.location.href = rootRel + 'add_new_piece_xadboom_atelier_admin/code.html';
+      });
+    }
+  });
+
+  // Direct piece card clicks to product detail page
+  document.querySelectorAll('[data-purpose="product-card"], article').forEach(function(card) {
+    var txt = card.innerText || '';
+    if (txt.includes('Lumen Void Lounge Chair')) {
+      card.style.cursor = 'pointer';
+      card.addEventListener('click', function(e) {
+        if (!e.target.closest('a') && !e.target.closest('button')) {
+          window.location.href = rootRel + 'lumen_void_lounge_chair_product_detail_xadboom/code.html';
+        }
+      });
+    }
+  });
+})();
+</script>
+<!-- END: Xadboom Unified Navigation & Cart Lock Engine -->
+</body></html>

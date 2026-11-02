@@ -1,0 +1,1061 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-highest":"#f1dfd9","secondary":"#635d5c","surface-variant":"#f1dfd9","primary-container":"#1c1b1b","on-tertiary":"#ffffff","inverse-on-surface":"#ffede7","on-surface-variant":"#444748","on-tertiary-fixed-variant":"#52433e","secondary-container":"#e6dedc","on-primary-container":"#858383","tertiary-container":"#241915","on-background":"#231a16","primary-fixed":"#e5e2e1","inverse-surface":"#392e2a","secondary-fixed":"#e9e1df","on-tertiary-container":"#92807a","on-primary-fixed-variant":"#474646","on-secondary-fixed":"#1e1b1a","surface-container-lowest":"#ffffff","on-secondary":"#ffffff","on-error":"#ffffff","inverse-primary":"#c9c6c5","surface-bright":"#fff8f6","primary-fixed-dim":"#c9c6c5","secondary-fixed-dim":"#cdc5c3","surface-container-low":"#fff1ec","tertiary-fixed-dim":"#d7c2bb","tertiary":"#000000","on-primary-fixed":"#1c1b1b","on-primary":"#ffffff","primary":"#000000","outline":"#747878","surface-tint":"#5f5e5e","outline-variant":"#c4c7c7","surface":"#fff8f6","on-secondary-fixed-variant":"#4b4644","on-surface":"#231a16","surface-dim":"#e8d6d0","on-secondary-container":"#676160","background":"#fff8f6","surface-container":"#fdeae4","error-container":"#ffdad6","on-error-container":"#93000a","surface-container-high":"#f7e4de","tertiary-fixed":"#f4ded7","error":"#ba1a1a","on-tertiary-fixed":"#241915"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"1.5rem","space-lg":"1.5rem","space-xs":"0.25rem","margin":"1.25rem","space-2xl":"4rem","margin-desktop":"4rem","space-3xl":"6rem","space-sm":"0.5rem","space-md":"1rem","gutter-desktop":"2.5rem","margin-tablet":"2.5rem","space-xl":"2.5rem"},"fontFamily":{"headline-sm":["Space Grotesk"],"curatorial-quote":["Newsreader"],"headline-lg":["Space Grotesk"],"label-caps":["Space Grotesk"],"headline-md":["Space Grotesk"],"headline-lg-mobile":["Space Grotesk"],"display":["Space Grotesk"],"label-md":["Space Grotesk"],"body-lg":["DM Sans"],"display-mobile":["Space Grotesk"],"body-md":["DM Sans"],"curatorial-quote-mobile":["Newsreader"]},"fontSize":{"headline-sm":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.01em","fontWeight":"500"}],"curatorial-quote":["1.875rem",{"lineHeight":"2.5rem","letterSpacing":"-0.01em","fontWeight":"400"}],"headline-lg":["3.5rem",{"lineHeight":"3.75rem","letterSpacing":"-0.03em","fontWeight":"400"}],"label-caps":["0.6875rem",{"lineHeight":"1rem","letterSpacing":"0.12em","fontWeight":"600"}],"headline-md":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.02em","fontWeight":"500"}],"headline-lg-mobile":["2.25rem",{"lineHeight":"2.5rem","letterSpacing":"-0.02em","fontWeight":"400"}],"display":["5rem",{"lineHeight":"5.25rem","letterSpacing":"-0.04em","fontWeight":"400"}],"label-md":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"0.02em","fontWeight":"500"}],"body-lg":["1.125rem",{"lineHeight":"1.75rem","letterSpacing":"-0.01em","fontWeight":"400"}],"display-mobile":["2.75rem",{"lineHeight":"3rem","letterSpacing":"-0.03em","fontWeight":"400"}],"body-md":["0.9375rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"400"}],"curatorial-quote-mobile":["1.375rem",{"lineHeight":"2rem","letterSpacing":"0","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased" style="background-color: rgb(244, 230, 234);"><aside class="fixed left-0 top-0 h-full w-20 bg-primary-container z-50 flex flex-col items-center justify-between py-space-lg"><div class="flex flex-col items-center w-full gap-space-xl"><div class="w-10 h-10 bg-tertiary-container flex items-center justify-center"><span class="font-label-caps text-label-caps text-on-tertiary tracking-widest font-bold">XB</span></div><nav class="flex flex-col items-center gap-space-sm w-full px-space-xs" data-active-classes="bg-surface text-primary"><a class="w-12 h-12 flex items-center justify-center text-on-primary-container hover:text-on-primary hover:bg-surface/10 transition-colors" data-path="overview" href="#" title="Overview"><span class="material-symbols-outlined text-[20px]">dashboard</span></a><a class="w-12 h-12 flex items-center justify-center text-on-primary-container hover:text-on-primary hover:bg-surface/10 transition-colors" data-path="pieces-catalog" href="#" title="Pieces Catalog"><span class="material-symbols-outlined text-[20px]">category</span></a><a class="w-12 h-12 flex items-center justify-center text-on-primary-container hover:text-on-primary hover:bg-surface/10 transition-colors" data-path="categories" href="#" title="Categories"><span class="material-symbols-outlined text-[20px]">account_tree</span></a><a class="w-12 h-12 flex items-center justify-center text-on-primary-container hover:text-on-primary hover:bg-surface/10 transition-colors" data-path="designers" href="#" title="Designers"><span class="material-symbols-outlined text-[20px]">architecture</span></a><a class="w-12 h-12 flex items-center justify-center text-on-primary-container hover:text-on-primary hover:bg-surface/10 transition-colors" data-path="orders" href="#" title="Orders"><span class="material-symbols-outlined text-[20px]">receipt_long</span></a><a class="w-12 h-12 flex items-center justify-center text-on-primary-container hover:text-on-primary hover:bg-surface/10 transition-colors" data-path="users" href="#" title="Users"><span class="material-symbols-outlined text-[20px]">group</span></a><div class="relative flex items-center justify-center"><a aria-current="page" class="w-12 h-12 flex items-center justify-center transition-colors bg-surface text-primary" data-path="inquiries-and-forms" href="#" title="Inquiries &amp; Forms"><span class="material-symbols-outlined text-[20px]">drafts</span></a><span class="absolute top-1 right-1 w-2 h-2 bg-on-tertiary-fixed-variant rounded-full pointer-events-none"></span></div></nav></div><div class="flex flex-col items-center gap-space-md"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ring-1 ring-on-primary-container/20"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></aside><div class="pl-20 min-h-screen flex flex-col"><header class="fixed top-0 left-20 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-md"><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Curatorial Atelier</span><span class="text-outline-variant font-label-caps text-label-caps">/</span><span class="font-label-caps text-label-caps text-on-surface font-semibold tracking-wide uppercase">Client Inquiries &amp; Form Submissions</span></div><div class="flex items-center gap-space-xl"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-[18px] text-on-surface-variant pointer-events-none">search</span><input class="w-72 bg-surface-container-low pl-10 pr-4 py-2 font-body-md text-label-md text-on-surface placeholder:text-on-surface-variant outline-none" placeholder="Search index or client registry..." type="text"></div><div class="flex items-center gap-space-sm pl-space-md"><div class="w-2 h-2 rounded-full bg-primary animate-pulse"></div><span class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider">Curator On Duty</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 w-full flex-1 bg-surface" style="background-color: rgb(244, 230, 234);"><div class="flex flex-col w-full">
+<div class="w-full bg-surface-container-high px-space-xl py-space-xl flex flex-col gap-space-xl">
+<!-- Title & Action Bar -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-primary"></span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant font-semibold">
+            Curatorial Atelier / Intake &amp; Inquiries / Form Submissions
+          </span>
+</div>
+<h1 class="font-headline-md text-headline-md tracking-tight text-on-surface">
+          Curatorial Inquiries &amp; Client Form Submissions
+        </h1>
+<p class="font-body-md text-body-md text-secondary">
+          Central intake ledger for bespoke commission requests, private viewing appointments, acquisition inquiries, and trade specification downloads across European and Middle Eastern ateliers.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm self-start lg:self-auto shrink-0">
+<button class="inline-flex items-center gap-2 px-space-md py-2.5 bg-surface text-on-surface font-label-caps text-label-caps tracking-wider uppercase hover:bg-surface-container transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+          Export CSV / PDF
+        </button>
+<button class="inline-flex items-center gap-2 px-space-md py-2.5 bg-primary text-on-primary font-label-caps text-label-caps tracking-wider uppercase hover:bg-primary-container transition-colors shadow-sm" onclick="document.getElementById('manual-inquiry-modal').classList.remove('hidden')" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+          + Log Manual Inquiry
+        </button>
+</div>
+</div>
+<!-- Executive KPI Grid (4 Columns) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-low p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary">Total Inquiries</span>
+<div class="w-8 h-8 bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">inbox</span>
+</div>
+</div>
+<div class="mt-space-md flex flex-col">
+<span class="font-headline-lg text-headline-lg leading-none tracking-tight text-on-surface">48</span>
+<span class="font-body-md text-label-md text-secondary mt-1 flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 bg-primary"></span>
+            +12 this week • 92% SLA met
+          </span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary">Private Viewings</span>
+<div class="w-8 h-8 bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+</div>
+</div>
+<div class="mt-space-md flex flex-col">
+<span class="font-headline-lg text-headline-lg leading-none tracking-tight text-on-surface">14</span>
+<span class="font-body-md text-label-md text-secondary mt-1 flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 bg-secondary"></span>
+            Zurich &amp; Tehran Studio Salons
+          </span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary">Bespoke Commissions</span>
+<div class="w-8 h-8 bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">architecture</span>
+</div>
+</div>
+<div class="mt-space-md flex flex-col">
+<span class="font-headline-lg text-headline-lg leading-none tracking-tight text-on-surface">09</span>
+<span class="font-body-md text-label-md text-secondary mt-1 flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 bg-primary"></span>
+            Pending Curatorial Review
+          </span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary">Trade Spec Downloads</span>
+<div class="w-8 h-8 bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">download_for_offline</span>
+</div>
+</div>
+<div class="mt-space-md flex flex-col">
+<span class="font-headline-lg text-headline-lg leading-none tracking-tight text-on-surface">126</span>
+<span class="font-body-md text-label-md text-secondary mt-1 flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 bg-secondary"></span>
+            Verified Architects &amp; Designers
+          </span>
+</div>
+</div>
+</div>
+<!-- Filter Tab Bar & Refinement Row -->
+<div class="bg-surface-container-low p-space-md shadow-sm flex flex-col gap-space-md">
+<!-- Tabs -->
+<div class="flex flex-wrap items-center gap-2">
+<button class="px-space-md py-1.5 bg-primary text-on-primary font-label-caps text-label-caps tracking-wider uppercase transition-colors">
+          All Submissions (48)
+        </button>
+<button class="px-space-md py-1.5 bg-surface text-secondary hover:text-on-surface font-label-caps text-label-caps tracking-wider uppercase transition-colors">
+          Private Viewing (14)
+        </button>
+<button class="px-space-md py-1.5 bg-surface text-secondary hover:text-on-surface font-label-caps text-label-caps tracking-wider uppercase transition-colors">
+          Bespoke Commission (09)
+        </button>
+<button class="px-space-md py-1.5 bg-surface text-secondary hover:text-on-surface font-label-caps text-label-caps tracking-wider uppercase transition-colors">
+          Acquisition Quote (18)
+        </button>
+<button class="px-space-md py-1.5 bg-surface text-secondary hover:text-on-surface font-label-caps text-label-caps tracking-wider uppercase transition-colors">
+          Unassigned / New (07)
+        </button>
+</div>
+<!-- Dropdown Filter Toolbar -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-space-sm pt-space-xs">
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps uppercase text-secondary">Inquiry Status</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface px-3 py-2 pr-8 font-label-md text-label-md text-on-surface outline-none cursor-pointer">
+<option>All Statuses (Pending, Active, Closed)</option>
+<option>Pending Review</option>
+<option>In Progress</option>
+<option>Contacted</option>
+<option>Archived</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2.5 top-2.5 text-[18px] text-secondary">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps uppercase text-secondary">Assigned Curator</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface px-3 py-2 pr-8 font-label-md text-label-md text-on-surface outline-none cursor-pointer">
+<option>All Curators</option>
+<option>Helena Vane (Geneva / Zurich)</option>
+<option>Jean-Claude Moreau (Paris)</option>
+<option>Nader Khademi (Tehran)</option>
+<option>Unassigned (Atelier Queue)</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2.5 top-2.5 text-[18px] text-secondary">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps uppercase text-secondary">Regional Atelier Hub</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface px-3 py-2 pr-8 font-label-md text-label-md text-on-surface outline-none cursor-pointer">
+<option>All Regional Hubs</option>
+<option>Zurich Atelier</option>
+<option>Tehran Studio Salon</option>
+<option>Milan Showroom</option>
+<option>Paris Bureau</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2.5 top-2.5 text-[18px] text-secondary">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps uppercase text-secondary">Sorting Ledger</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface px-3 py-2 pr-8 font-label-md text-label-md text-on-surface outline-none cursor-pointer">
+<option>Newest First (Chronological)</option>
+<option>Highest Commercial Priority</option>
+<option>SLA Breaches Pending</option>
+<option>By Client Entity (A-Z)</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2.5 top-2.5 text-[18px] text-secondary">expand_more</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Master Inquiries & Submissions Ledger -->
+<div class="bg-surface-container-low shadow-sm flex flex-col">
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container">
+<th class="py-3 px-space-md font-label-caps text-label-caps uppercase tracking-wider text-secondary">Inquirer &amp; Studio Entity</th>
+<th class="py-3 px-space-md font-label-caps text-label-caps uppercase tracking-wider text-secondary">Type / Intent</th>
+<th class="py-3 px-space-md font-label-caps text-label-caps uppercase tracking-wider text-secondary">Referenced Asset / Designer</th>
+<th class="py-3 px-space-md font-label-caps text-label-caps uppercase tracking-wider text-secondary">Message Snippet &amp; Specs</th>
+<th class="py-3 px-space-md font-label-caps text-label-caps uppercase tracking-wider text-secondary">Date &amp; Cadence</th>
+<th class="py-3 px-space-md font-label-caps text-label-caps uppercase tracking-wider text-secondary">Status</th>
+<th class="py-3 px-space-md font-label-caps text-label-caps uppercase tracking-wider text-secondary text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<!-- Row 1 -->
+<tr class="hover:bg-surface/50 transition-colors">
+<td class="py-4 px-space-md align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-medium text-on-surface">Elena Rostova</span>
+<span class="font-body-md text-label-md text-secondary">VIP Private Collector</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-wider uppercase mt-0.5">Geneva, CH</span>
+</div>
+</td>
+<td class="py-4 px-space-md align-top">
+<span class="inline-block px-2.5 py-1 bg-surface text-on-surface font-label-caps text-label-caps uppercase tracking-wider">
+                  Private Viewing
+                </span>
+</td>
+<td class="py-4 px-space-md align-top">
+<div class="flex flex-col max-w-[200px]">
+<span class="font-label-md text-label-md font-medium text-on-surface">Lumen Void Lounge Chair</span>
+<span class="font-curatorial-quote italic text-secondary text-sm">Alireza Taghaboni</span>
+<span class="font-label-caps text-label-caps text-secondary uppercase mt-0.5">Edition 03/12</span>
+</div>
+</td>
+<td class="py-4 px-space-md align-top max-w-sm">
+<p class="font-body-md text-body-md text-on-surface line-clamp-2">
+                  Requesting private salon viewing at Zurich Atelier for Edition 03/12 inspection with interior advisor.
+                </p>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Zurich Salon</span>
+<span class="text-secondary">•</span>
+<span class="font-label-caps text-label-caps uppercase text-secondary">2 Guests</span>
+</div>
+</td>
+<td class="py-4 px-space-md align-top whitespace-nowrap">
+<span class="font-label-md text-label-md text-on-surface block">Today, 10:24 AM</span>
+<span class="font-label-caps text-label-caps text-secondary uppercase">2h ago</span>
+</td>
+<td class="py-4 px-space-md align-top whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-surface-container-highest text-tertiary-container font-label-caps text-label-caps uppercase tracking-wider">
+<span class="w-1.5 h-1.5 bg-tertiary-container"></span>
+                  Pending Review
+                </span>
+</td>
+<td class="py-4 px-space-md align-top text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1">
+<button class="px-2.5 py-1.5 bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-wider hover:bg-primary-container transition-colors" onclick="document.getElementById('inquiry-modal').classList.remove('hidden')" type="button">
+                    Review &amp; Reply
+                  </button>
+<button class="p-1.5 text-secondary hover:text-on-surface transition-colors" title="More Options" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface/50 transition-colors">
+<td class="py-4 px-space-md align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-medium text-on-surface">Darius Mehregan</span>
+<span class="font-body-md text-label-md text-secondary">Mehregan Spatial Design</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-wider uppercase mt-0.5">Tehran, IR</span>
+</div>
+</td>
+<td class="py-4 px-space-md align-top">
+<span class="inline-block px-2.5 py-1 bg-surface text-on-surface font-label-caps text-label-caps uppercase tracking-wider">
+                  Bespoke Commission
+                </span>
+</td>
+<td class="py-4 px-space-md align-top">
+<div class="flex flex-col max-w-[200px]">
+<span class="font-label-md text-label-md font-medium text-on-surface">Tectonic Monolith Console</span>
+<span class="font-curatorial-quote italic text-secondary text-sm">Alireza Taghaboni</span>
+<span class="font-label-caps text-label-caps text-secondary uppercase mt-0.5">Architectural Spec</span>
+</div>
+</td>
+<td class="py-4 px-space-md align-top max-w-sm">
+<p class="font-body-md text-body-md text-on-surface line-clamp-2">
+                  Custom sizing request for Villa 131 project in Lavasan: extending travertine length to 280cm with bronze patina.
+                </p>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Travertine / Bronze</span>
+<span class="text-secondary">•</span>
+<span class="font-label-caps text-label-caps uppercase text-secondary">Villa 131</span>
+</div>
+</td>
+<td class="py-4 px-space-md align-top whitespace-nowrap">
+<span class="font-label-md text-label-md text-on-surface block">Yesterday, 16:40</span>
+<span class="font-label-caps text-label-caps text-secondary uppercase">22h ago</span>
+</td>
+<td class="py-4 px-space-md align-top whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-surface-container text-on-surface font-label-caps text-label-caps uppercase tracking-wider">
+<span class="w-1.5 h-1.5 bg-primary"></span>
+                  Under Review
+                </span>
+</td>
+<td class="py-4 px-space-md align-top text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1">
+<button class="px-2.5 py-1.5 bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-wider hover:bg-primary-container transition-colors" onclick="document.getElementById('inquiry-modal').classList.remove('hidden')" type="button">
+                    Review &amp; Reply
+                  </button>
+<button class="p-1.5 text-secondary hover:text-on-surface transition-colors" title="More Options" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface/50 transition-colors">
+<td class="py-4 px-space-md align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-medium text-on-surface">Camilla Bertoni</span>
+<span class="font-body-md text-label-md text-secondary">Bertoni Design Group</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-wider uppercase mt-0.5">Milan, IT</span>
+</div>
+</td>
+<td class="py-4 px-space-md align-top">
+<span class="inline-block px-2.5 py-1 bg-surface text-on-surface font-label-caps text-label-caps uppercase tracking-wider">
+                  Custom Spec &amp; Quote
+                </span>
+</td>
+<td class="py-4 px-space-md align-top">
+<div class="flex flex-col max-w-[200px]">
+<span class="font-label-md text-label-md font-medium text-on-surface">Cantilever Cane Daybed</span>
+<span class="font-curatorial-quote italic text-secondary text-sm">Mehrdad Zavareh</span>
+<span class="font-label-caps text-label-caps text-secondary uppercase mt-0.5">2 Units Hospitality</span>
+</div>
+</td>
+<td class="py-4 px-space-md align-top max-w-sm">
+<p class="font-body-md text-body-md text-on-surface line-clamp-2">
+                  Specifying 2 units for boutique hotel lounge in Lake Como. Needs material tear sheet and freight timeline.
+                </p>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Como Project</span>
+<span class="text-secondary">•</span>
+<span class="font-label-caps text-label-caps uppercase text-secondary">Tear Sheet Req</span>
+</div>
+</td>
+<td class="py-4 px-space-md align-top whitespace-nowrap">
+<span class="font-label-md text-label-md text-on-surface block">Oct 20, 2024</span>
+<span class="font-label-caps text-label-caps text-secondary uppercase">2 days ago</span>
+</td>
+<td class="py-4 px-space-md align-top whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-surface-container-highest text-on-surface font-label-caps text-label-caps uppercase tracking-wider">
+<span class="w-1.5 h-1.5 bg-secondary"></span>
+                  In Progress
+                </span>
+</td>
+<td class="py-4 px-space-md align-top text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1">
+<button class="px-2.5 py-1.5 bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-wider hover:bg-primary-container transition-colors" onclick="document.getElementById('inquiry-modal').classList.remove('hidden')" type="button">
+                    Review &amp; Reply
+                  </button>
+<button class="p-1.5 text-secondary hover:text-on-surface transition-colors" title="More Options" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface/50 transition-colors">
+<td class="py-4 px-space-md align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-medium text-on-surface">Studio ZT / Zaha &amp; Thomas</span>
+<span class="font-body-md text-label-md text-secondary">Trade Architecture Studio</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-wider uppercase mt-0.5">Zurich, CH</span>
+</div>
+</td>
+<td class="py-4 px-space-md align-top">
+<span class="inline-block px-2.5 py-1 bg-surface text-on-surface font-label-caps text-label-caps uppercase tracking-wider">
+                  Trade Spec &amp; 3D
+                </span>
+</td>
+<td class="py-4 px-space-md align-top">
+<div class="flex flex-col max-w-[200px]">
+<span class="font-label-md text-label-md font-medium text-on-surface">Luma Wood Arc Lamp</span>
+<span class="font-curatorial-quote italic text-secondary text-sm">Atelier Arpa</span>
+<span class="font-label-caps text-label-caps text-secondary uppercase mt-0.5">Batch 4 Units</span>
+</div>
+</td>
+<td class="py-4 px-space-md align-top max-w-sm">
+<p class="font-body-md text-body-md text-on-surface line-clamp-2">
+                  Downloaded 3D model and request commercial batch quote for 4 units with custom dimmer module.
+                </p>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Asset Pack #82</span>
+<span class="text-secondary">•</span>
+<span class="font-label-caps text-label-caps uppercase text-secondary">STEP/OBJ Included</span>
+</div>
+</td>
+<td class="py-4 px-space-md align-top whitespace-nowrap">
+<span class="font-label-md text-label-md text-on-surface block">Oct 19, 2024</span>
+<span class="font-label-caps text-label-caps text-secondary uppercase">3 days ago</span>
+</td>
+<td class="py-4 px-space-md align-top whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-surface-container-high text-on-surface font-label-caps text-label-caps uppercase tracking-wider">
+<span class="w-1.5 h-1.5 bg-primary"></span>
+                  Contacted
+                </span>
+</td>
+<td class="py-4 px-space-md align-top text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1">
+<button class="px-2.5 py-1.5 bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-wider hover:bg-primary-container transition-colors" onclick="document.getElementById('inquiry-modal').classList.remove('hidden')" type="button">
+                    Review &amp; Reply
+                  </button>
+<button class="p-1.5 text-secondary hover:text-on-surface transition-colors" title="More Options" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface/50 transition-colors">
+<td class="py-4 px-space-md align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-medium text-on-surface">Jean-Paul Laurent</span>
+<span class="font-body-md text-label-md text-secondary">Laurent Architecture</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-wider uppercase mt-0.5">Paris, FR</span>
+</div>
+</td>
+<td class="py-4 px-space-md align-top">
+<span class="inline-block px-2.5 py-1 bg-surface text-on-surface font-label-caps text-label-caps uppercase tracking-wider">
+                  Acquisition In-situ
+                </span>
+</td>
+<td class="py-4 px-space-md align-top">
+<div class="flex flex-col max-w-[200px]">
+<span class="font-label-md text-label-md font-medium text-on-surface">Radial Carved Ash Dining Chair</span>
+<span class="font-curatorial-quote italic text-secondary text-sm">Studio Khazeni</span>
+<span class="font-label-caps text-label-caps text-secondary uppercase mt-0.5">Set of 8</span>
+</div>
+</td>
+<td class="py-4 px-space-md align-top max-w-sm">
+<p class="font-body-md text-body-md text-on-surface line-clamp-2">
+                  Checking stock availability for 8 chairs in blackened Iranian ash finish with lead-time to Paris.
+                </p>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Residential Fitout</span>
+<span class="text-secondary">•</span>
+<span class="font-label-caps text-label-caps uppercase text-secondary">Paris 7th Arr.</span>
+</div>
+</td>
+<td class="py-4 px-space-md align-top whitespace-nowrap">
+<span class="font-label-md text-label-md text-on-surface block">Oct 18, 2024</span>
+<span class="font-label-caps text-label-caps text-secondary uppercase">4 days ago</span>
+</td>
+<td class="py-4 px-space-md align-top whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-secondary-container text-on-secondary-container font-label-caps text-label-caps uppercase tracking-wider">
+<span class="w-1.5 h-1.5 bg-secondary"></span>
+                  Closed / Converted
+                </span>
+</td>
+<td class="py-4 px-space-md align-top text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1">
+<button class="px-2.5 py-1.5 bg-surface text-on-surface font-label-caps text-label-caps uppercase tracking-wider hover:bg-surface-container transition-colors" onclick="document.getElementById('inquiry-modal').classList.remove('hidden')" type="button">
+                    Inspect Thread
+                  </button>
+<button class="p-1.5 text-secondary hover:text-on-surface transition-colors" title="More Options" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination Footer -->
+<div class="flex flex-col sm:flex-row items-center justify-between p-space-md bg-surface-container gap-space-sm">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider">
+          Showing 1 - 5 of 48 Inquiries
+        </span>
+<div class="flex items-center gap-1">
+<button class="px-3 py-1.5 bg-surface text-secondary font-label-caps text-label-caps uppercase tracking-wider hover:text-on-surface">Prev</button>
+<button class="px-3 py-1.5 bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-wider">1</button>
+<button class="px-3 py-1.5 bg-surface text-secondary font-label-caps text-label-caps uppercase tracking-wider hover:text-on-surface">2</button>
+<button class="px-3 py-1.5 bg-surface text-secondary font-label-caps text-label-caps uppercase tracking-wider hover:text-on-surface">3</button>
+<span class="px-2 text-secondary font-label-caps">...</span>
+<button class="px-3 py-1.5 bg-surface text-secondary font-label-caps text-label-caps uppercase tracking-wider hover:text-on-surface">10</button>
+<button class="px-3 py-1.5 bg-surface text-secondary font-label-caps text-label-caps uppercase tracking-wider hover:text-on-surface">Next</button>
+</div>
+</div>
+</div>
+<!-- Deep-Dive Panels / Curatorial Intake Queues -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-md">
+<!-- Panel 1: Active Bespoke Commission Queue -->
+<div class="bg-surface-container-low p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">draw</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Active Bespoke Commission Queue</h2>
+</div>
+<span class="px-2 py-0.5 bg-primary text-on-primary font-label-caps text-label-caps uppercase">3 Priority Items</span>
+</div>
+<p class="font-body-md text-label-md text-secondary">
+            Custom dimensional adaptations and bespoke bronze casts requiring direct review with resident craftspersons.
+          </p>
+<div class="flex flex-col gap-space-sm mt-space-sm">
+<!-- Commission 1 -->
+<div class="bg-surface p-space-md flex flex-col gap-2">
+<div class="flex items-start justify-between">
+<div>
+<h3 class="font-label-md text-label-md font-semibold text-on-surface">Villa 131 Custom Console (280cm)</h3>
+<span class="font-curatorial-quote italic text-secondary text-sm">Mehregan Spatial Design • Alireza Taghaboni</span>
+</div>
+<span class="font-label-caps text-label-caps uppercase bg-surface-container px-2 py-0.5 text-on-surface">€24,500 Est.</span>
+</div>
+<p class="font-body-md text-label-md text-secondary">
+                Schematic elevation uploaded. Structural engineering check pending for cantilever travertine anchor point.
+              </p>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Lead: Nader Khademi</span>
+<button class="font-label-caps text-label-caps uppercase text-primary hover:underline flex items-center gap-1" onclick="document.getElementById('inquiry-modal').classList.remove('hidden')" type="button">
+                  Open Dossier →
+                </button>
+</div>
+</div>
+<!-- Commission 2 -->
+<div class="bg-surface p-space-md flex flex-col gap-2">
+<div class="flex items-start justify-between">
+<div>
+<h3 class="font-label-md text-label-md font-semibold text-on-surface">Lake Como Daybed Duo (Extended Rattan)</h3>
+<span class="font-curatorial-quote italic text-secondary text-sm">Bertoni Design Group • Mehrdad Zavareh</span>
+</div>
+<span class="font-label-caps text-label-caps uppercase bg-surface-container px-2 py-0.5 text-on-surface">€18,200 Est.</span>
+</div>
+<p class="font-body-md text-label-md text-secondary">
+                Commercial contract spec: fire-retardant foam substitution and marine lacquer for semi-covered terrace.
+              </p>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Lead: Helena Vane</span>
+<button class="font-label-caps text-label-caps uppercase text-primary hover:underline flex items-center gap-1" onclick="document.getElementById('inquiry-modal').classList.remove('hidden')" type="button">
+                  Open Dossier →
+                </button>
+</div>
+</div>
+<!-- Commission 3 -->
+<div class="bg-surface p-space-md flex flex-col gap-2">
+<div class="flex items-start justify-between">
+<div>
+<h3 class="font-label-md text-label-md font-semibold text-on-surface">Pillar Void Pedestal (Monolithic Blackened Granite)</h3>
+<span class="font-curatorial-quote italic text-secondary text-sm">Private Collector • Studio Khazeni</span>
+</div>
+<span class="font-label-caps text-label-caps uppercase bg-surface-container px-2 py-0.5 text-on-surface">€12,800 Est.</span>
+</div>
+<p class="font-body-md text-label-md text-secondary">
+                Quarry material sample sent to Geneva for collector approval. Awaiting client signature on proof.
+              </p>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Lead: Jean-Claude Moreau</span>
+<button class="font-label-caps text-label-caps uppercase text-primary hover:underline flex items-center gap-1" onclick="document.getElementById('inquiry-modal').classList.remove('hidden')" type="button">
+                  Open Dossier →
+                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Panel 2: Curator Assignment & SLA Telemetry -->
+<div class="bg-surface-container-low p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">speed</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Curator Telemetry &amp; SLA Pulse</h2>
+</div>
+<span class="px-2 py-0.5 bg-surface text-secondary font-label-caps text-label-caps uppercase">Weekly Benchmark</span>
+</div>
+<p class="font-body-md text-label-md text-secondary">
+            Response cadence monitored across ateliers to preserve collector intimacy and high-touch advisory standards.
+          </p>
+<!-- Metric highlights -->
+<div class="grid grid-cols-2 gap-space-sm mt-space-xs">
+<div class="bg-surface p-space-md flex flex-col">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Avg. Response Time</span>
+<span class="font-headline-md text-headline-md tracking-tight text-on-surface mt-1">2.4 <span class="text-sm font-normal text-secondary font-body-md">Hours</span></span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant mt-1">Target: &lt; 4.0h</span>
+</div>
+<div class="bg-surface p-space-md flex flex-col">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Inquiry Conversion</span>
+<span class="font-headline-md text-headline-md tracking-tight text-on-surface mt-1">38.4%</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant mt-1">+4.2% vs last cycle</span>
+</div>
+</div>
+<!-- Active Curators workload -->
+<div class="bg-surface p-space-md flex flex-col gap-space-sm mt-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary">Active Ateliers on Duty</span>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 bg-primary text-on-primary flex items-center justify-center font-label-caps text-label-caps font-bold">HV</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-medium text-on-surface">Helena Vane</span>
+<span class="font-body-md text-label-md text-secondary">Zurich &amp; Geneva Hub</span>
+</div>
+</div>
+<span class="font-label-caps text-label-caps uppercase bg-surface-container px-2 py-1 text-on-surface">11 Inquiries (Active)</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 bg-primary text-on-primary flex items-center justify-center font-label-caps text-label-caps font-bold">NK</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-medium text-on-surface">Nader Khademi</span>
+<span class="font-body-md text-label-md text-secondary">Tehran Studio Salon</span>
+</div>
+</div>
+<span class="font-label-caps text-label-caps uppercase bg-surface-container px-2 py-1 text-on-surface">08 Inquiries (Active)</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 bg-primary text-on-primary flex items-center justify-center font-label-caps text-label-caps font-bold">JM</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-medium text-on-surface">Jean-Claude Moreau</span>
+<span class="font-body-md text-label-md text-secondary">Paris &amp; Milan Bureau</span>
+</div>
+</div>
+<span class="font-label-caps text-label-caps uppercase bg-surface-container px-2 py-1 text-on-surface">06 Inquiries (Active)</span>
+</div>
+</div>
+<!-- Quick Template Trigger -->
+<div class="p-space-sm bg-surface-container flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Ready-to-dispatch curatorial templates</span>
+<button class="font-label-caps text-label-caps uppercase text-primary font-semibold hover:underline">
+              Access Templates →
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Detail Modal Dialog (Hidden by default, opened on 'Review & Reply') -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm" id="inquiry-modal">
+<div class="bg-surface-container-high max-w-3xl w-full p-space-xl shadow-xl flex flex-col gap-space-lg max-h-[921px] overflow-y-auto">
+<!-- Modal Header -->
+<div class="flex items-start justify-between pb-space-md bg-surface-container">
+<div class="flex flex-col gap-1 p-space-md">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps uppercase bg-primary text-on-primary px-2 py-0.5">INQ-2024-810</span>
+<span class="font-label-caps text-label-caps uppercase text-secondary">• Private Viewing Intake</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Curatorial Inquiry Dossier: Elena Rostova</h2>
+<span class="font-body-md text-label-md text-secondary">VIP Private Collector • Geneva, Switzerland</span>
+</div>
+<button class="p-space-md text-secondary hover:text-on-surface" onclick="document.getElementById('inquiry-modal').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<!-- Dossier Content Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Client & Context Metadata -->
+<div class="flex flex-col gap-space-sm bg-surface p-space-md">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Referenced Piece</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Lumen Void Lounge Chair</span>
+<span class="font-curatorial-quote italic text-secondary text-sm">Alireza Taghaboni</span>
+<span class="font-label-caps text-label-caps text-secondary uppercase mt-1">Edition: 03/12</span>
+<span class="font-label-caps text-label-caps text-secondary uppercase">Valuation: €32,000</span>
+</div>
+<div class="pt-space-sm flex flex-col gap-1">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Requested Schedule</span>
+<span class="font-body-md text-label-md text-on-surface">Thursday, Nov 02 — 15:00</span>
+<span class="font-label-caps text-label-caps uppercase text-secondary">Location: Zurich Salon</span>
+</div>
+<div class="pt-space-sm flex flex-col gap-1">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Assigned Curator</span>
+<select class="w-full bg-surface-container px-2 py-1.5 font-label-md text-label-md text-on-surface outline-none">
+<option selected="">Helena Vane (Zurich)</option>
+<option>Nader Khademi (Tehran)</option>
+<option>Jean-Claude Moreau (Paris)</option>
+</select>
+</div>
+</div>
+<!-- Full Transcript & Specs -->
+<div class="md:col-span-2 flex flex-col gap-space-md">
+<div class="bg-surface p-space-md flex flex-col gap-2">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Inquirer Message &amp; Intent</span>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+              "We would like to inspect the patina and joinery details of Edition 03/12 in person ahead of the acquisition confirmation for our Geneva estate residence. My interior advisor, Marc Vigneron, will accompany me. Please ensure material samples for raw oxidized bronze are on hand."
+            </p>
+</div>
+<div class="bg-surface p-space-md flex flex-col gap-2">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Internal Atelier Notes</span>
+<textarea class="w-full bg-surface-container-low p-2 font-body-md text-label-md text-on-surface outline-none" placeholder="Add confidential curator remarks or salon prep requests..." rows="3"></textarea>
+</div>
+</div>
+</div>
+<!-- Modal Actions -->
+<div class="flex items-center justify-between pt-space-sm bg-surface-container p-space-md">
+<button class="px-space-md py-2 bg-surface text-secondary font-label-caps text-label-caps uppercase tracking-wider hover:text-on-surface" type="button">
+          Mark as Archived
+        </button>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-2 bg-surface text-on-surface font-label-caps text-label-caps uppercase tracking-wider hover:bg-surface-container" onclick="document.getElementById('inquiry-modal').classList.add('hidden')" type="button">
+            Cancel
+          </button>
+<button class="px-space-md py-2 bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-wider hover:bg-primary-container" onclick="document.getElementById('inquiry-modal').classList.add('hidden')" type="button">
+            Send Atelier Response
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Manual Inquiry Modal (Hidden by default) -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm" id="manual-inquiry-modal">
+<div class="bg-surface-container-high max-w-xl w-full p-space-xl shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Log Manual Curatorial Intake</h3>
+<button class="text-secondary hover:text-on-surface" onclick="document.getElementById('manual-inquiry-modal').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div>
+<label class="font-label-caps text-label-caps uppercase text-secondary block mb-1">Client Full Name / Entity</label>
+<input class="w-full bg-surface px-3 py-2 font-label-md text-label-md text-on-surface outline-none" placeholder="e.g. Baroness von Richter / Studio K" type="text">
+</div>
+<div>
+<label class="font-label-caps text-label-caps uppercase text-secondary block mb-1">Inquiry Type</label>
+<select class="w-full bg-surface px-3 py-2 font-label-md text-label-md text-on-surface outline-none">
+<option>Private Viewing Appointment</option>
+<option>Bespoke Commission Consultation</option>
+<option>Acquisition Quote</option>
+<option>Direct Trade Specification</option>
+</select>
+</div>
+<div>
+<label class="font-label-caps text-label-caps uppercase text-secondary block mb-1">Referenced Catalog Piece</label>
+<input class="w-full bg-surface px-3 py-2 font-label-md text-label-md text-on-surface outline-none" placeholder="e.g. Tectonic Monolith Console" type="text">
+</div>
+<div>
+<label class="font-label-caps text-label-caps uppercase text-secondary block mb-1">Intake Details &amp; Specifics</label>
+<textarea class="w-full bg-surface px-3 py-2 font-body-md text-label-md text-on-surface outline-none" placeholder="Record client channel, requirements, and salon requirements..." rows="3"></textarea>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-2 bg-surface text-secondary font-label-caps text-label-caps uppercase hover:text-on-surface" onclick="document.getElementById('manual-inquiry-modal').classList.add('hidden')" type="button">
+          Cancel
+        </button>
+<button class="px-space-md py-2 bg-primary text-on-primary font-label-caps text-label-caps uppercase hover:bg-primary-container" onclick="document.getElementById('manual-inquiry-modal').classList.add('hidden')" type="button">
+          Save to Ledger
+        </button>
+</div>
+</div>
+</div>
+</div></main></div>
+
+
+<!-- BEGIN: Xadboom Unified Navigation & Cart Lock Engine -->
+<div id="xadboom-cart-drawer" style="display:none;position:fixed;top:0;right:0;bottom:0;width:100%;max-width:440px;background:#FFF8F6;box-shadow:-12px 0 40px rgba(35,26,22,0.2);z-index:100000;border-left:1px solid #D8C3BC;font-family:'DM Sans',sans-serif;color:#1C1917;flex-direction:column;">
+  <!-- Drawer Header -->
+  <div style="padding:18px 24px;border-bottom:1px solid #D8C3BC;display:flex;align-items:center;justify-content:space-between;background:#ECDAD4;">
+    <div style="display:flex;align-items:center;gap:10px;">
+      <span style="width:8px;height:8px;border-radius:50%;background:#0A0A0A;"></span>
+      <h3 style="margin:0;font-family:'Space Grotesk',monospace;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;">Allocation Bag &amp; Reservation</h3>
+    </div>
+    <button id="xadboom-cart-close" style="background:transparent;border:0;font-size:18px;cursor:pointer;color:#1C1917;padding:4px 8px;font-family:monospace;" aria-label="Close Bag">✕</button>
+  </div>
+
+  <!-- 15-Minute Reservation Lock Banner -->
+  <div id="xadboom-lock-banner" style="background:#FFF1EC;border-bottom:1px solid #E2CECB;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;">
+    <div style="display:flex;align-items:center;gap:8px;">
+      <span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#844C38;animation:pulse 1.5s infinite;"></span>
+      <span style="font-family:'Space Grotesk',monospace;font-size:10px;text-transform:uppercase;letter-spacing:0.08em;color:#844C38;font-weight:600;">15-MIN LOCK ACTIVE</span>
+    </div>
+    <div id="xadboom-countdown" style="font-family:'Space Grotesk',monospace;font-size:12px;font-weight:700;color:#0A0A0A;letter-spacing:0.08em;">
+      14:45
+    </div>
+  </div>
+
+  <!-- Drawer Body -->
+  <div id="xadboom-cart-items" style="flex:1;overflow-y:auto;padding:24px;">
+    <div style="border:1px solid #E2CECB;border-radius:12px;padding:16px;background:#FFF1EC;margin-bottom:16px;">
+      <div style="display:flex;gap:14px;align-items:start;">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwnCJLKLvhum3BMndM9-PH1frfIJppinysZwrLcPhUH0AV8GsVaqmZzF_M8GR6ESpCju6fnmTN7DFWKy-DiVCqZTxDLyhEPeC_IK_4w1soWZTFD96uhfpWmYlACXw6RMIu_Ap3-uZEyc31P9IHs_fpfl-sHnMMRmb6sBFJmXzGKlrdhEMF1NJT0AXLqQslhbsDqWiBXrgLGrfsPHfnJUGqunRKntyorrnZb5qlDbMt" style="width:72px;height:72px;object-fit:cover;border-radius:8px;border:1px solid #D8C3BC;">
+        <div style="flex:1;">
+          <span style="font-family:Space Grotesk,monospace;font-size:9px;color:#844C38;text-transform:uppercase;letter-spacing:0.1em;font-weight:700;display:block;">EDITION ALLOCATION</span>
+          <h4 style="margin:2px 0 4px;font-size:14px;font-weight:700;">Lumen Void Lounge Chair</h4>
+          <p style="margin:0;font-size:11px;color:#7A6E69;">Alireza Taghaboni · Solid Walnut &amp; Bouclé</p>
+          <div style="margin-top:8px;display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-family:Space Grotesk,monospace;font-size:10px;background:#0A0A0A;color:#fff;padding:2px 6px;border-radius:4px;">Ed. 03 / 12</span>
+            <span style="font-family:Space Grotesk,monospace;font-size:13px;font-weight:700;">$9,400</span>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:12px;padding-top:10px;border-top:1px dashed #D8C3BC;font-size:10.5px;color:#554B47;display:flex;align-items:center;gap:6px;">
+        <span>🛡️</span>
+        <span>Cryptographic Provenance Token: <strong>XB-PROV-LV-0312</strong></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Drawer Footer -->
+  <div style="padding:20px 24px;border-top:1px solid #D8C3BC;background:#FFF1EC;">
+    <div style="display:flex;justify-content:space-between;margin-bottom:8px;font-size:11px;font-family:'Space Grotesk',monospace;text-transform:uppercase;letter-spacing:0.06em;color:#7A6E69;">
+      <span>Atelier White-Glove Crate</span>
+      <span style="color:#0A0A0A;font-weight:600;">COMPLIMENTARY</span>
+    </div>
+    <div style="display:flex;justify-content:space-between;margin-bottom:16px;font-size:14px;font-weight:700;">
+      <span style="font-family:'Space Grotesk',monospace;text-transform:uppercase;letter-spacing:0.06em;">Total Acquisition</span>
+      <span id="xadboom-cart-total" style="font-family:'Space Grotesk',monospace;">$9,400</span>
+    </div>
+    <button id="xadboom-checkout-btn" style="width:100%;padding:14px;background:#0A0A0A;color:#FFF8F6;border:0;border-radius:9999px;font-family:'Space Grotesk',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;cursor:pointer;margin-bottom:8px;transition:opacity 0.2s;">
+      PROCEED TO ALLOCATION CHECKOUT ↗
+    </button>
+    <button id="xadboom-release-btn" style="width:100%;padding:8px;background:transparent;color:#7A6E69;border:0;font-family:'Space Grotesk',monospace;font-size:10px;text-transform:uppercase;letter-spacing:0.08em;cursor:pointer;">
+      Release Vault Lock Back to Inventory
+    </button>
+  </div>
+</div>
+<div id="xadboom-cart-backdrop" style="display:none;position:fixed;inset:0;background:rgba(28,25,23,0.4);backdrop-filter:blur(2px);z-index:99999;"></div>
+
+<!-- Quick Architectural Switcher Pill (Beneath Container Showing All 14 Pages) -->
+<div id="xadboom-quick-nav" style="position:fixed;bottom:14px;left:50%;transform:translateX(-50%);z-index:99998;font-family:'Space Grotesk',sans-serif;-webkit-font-smoothing:antialiased;max-width:96vw;">
+  <div style="box-shadow:0 8px 32px rgba(35,26,22,0.22);border:1px solid #D8C3BC;background:rgba(255,248,246,0.97);backdrop-filter:blur(16px);border-radius:9999px;padding:6px 14px;display:flex;align-items:center;gap:10px;overflow-x:auto;">
+    
+    <div style="display:flex;align-items:center;gap:7px;flex-shrink:0;">
+      <span style="width:7px;height:7px;border-radius:50%;background:#844C38;display:inline-block;"></span>
+      <span style="font-size:10.5px;font-family:'Space Grotesk',monospace;text-transform:uppercase;letter-spacing:0.12em;font-weight:700;color:#1C1917;">Xadboom</span>
+      <span style="font-size:9.5px;color:#7A6E69;font-family:monospace;background:#ECDAD4;padding:1px 6px;border-radius:4px;">Inquiries & Forms</span>
+    </div>
+
+    <div id="xadboom-nav-expanded" style="display:flex;align-items:center;gap:8px;border-left:1px solid #D8C3BC;padding-left:10px;flex-shrink:0;">
+      <div style="display:flex;align-items:center;gap:3px;">
+        <span style="font-size:9px;text-transform:uppercase;letter-spacing:0.08em;color:#7A6E69;font-family:monospace;margin-right:2px;">Store:</span>
+        <a href="../index.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Curated Home</a><a href="../curated_architectural_assets_physical_typologies_xadboom/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Typologies Catalog</a><a href="../lumen_void_lounge_chair_product_detail_xadboom/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Lumen Void Chair</a><a href="../designers_collaborating_visionaries_xadboom_1/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Visionaries (1)</a><a href="../designers_collaborating_visionaries_xadboom_2/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Visionaries (2)</a><a href="../contact_curatorial_inquiries_xadboom/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Curatorial Inquiries</a>
+      </div>
+      <div style="height:14px;width:1px;background:#D8C3BC;"></div>
+      <div style="display:flex;align-items:center;gap:3px;">
+        <span style="font-size:9px;text-transform:uppercase;letter-spacing:0.08em;color:#844C38;font-family:monospace;margin-right:2px;">Admin:</span>
+        <a href="../xadboom_atelier_admin_operations_inventory_lock_harmonized/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Operations & Ledger</a><a href="../pieces_catalog_xadboom_atelier_admin/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Pieces Catalog</a><a href="../add_new_piece_xadboom_atelier_admin/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">+ Add Piece</a><a href="../categories_typologies_xadboom_atelier_admin/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Categories</a><a href="../designers_collaborators_xadboom_atelier_admin/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Collaborators</a><a href="../orders_dispatches_xadboom_atelier_admin/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Orders & Dispatches</a><a href="../inquiries_forms_xadboom_atelier_admin/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;background:#0A0A0A;color:#FFF8F6;font-weight:700;">Inquiries & Forms</a><a href="../users_accounts_xadboom_atelier_admin/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Users & Accounts</a>
+      </div>
+    </div>
+
+    <!-- Bag Opener Pill -->
+    <button id="xadboom-open-cart-pill" style="background:#0A0A0A;color:#FFF8F6;border:0;border-radius:9999px;padding:3px 10px;font-size:10px;font-family:monospace;font-weight:700;letter-spacing:0.06em;cursor:pointer;display:flex;align-items:center;gap:4px;flex-shrink:0;">
+      <span>BAG</span>
+      <span id="xadboom-pill-cart-count" style="background:#844C38;border-radius:50%;padding:1px 5px;font-size:9px;">1</span>
+    </button>
+
+    <button id="xadboom-nav-toggle" style="background:#ECDAD4;border:1px solid #D8C3BC;border-radius:9999px;padding:3px 8px;font-size:10px;font-family:monospace;cursor:pointer;color:#1C1917;font-weight:600;flex-shrink:0;" title="Toggle Bar">
+      ▾
+    </button>
+  </div>
+</div>
+
+<script>
+(function() {
+  // Navigation Bar Collapse Toggle
+  var expanded = document.getElementById('xadboom-nav-expanded');
+  var toggle = document.getElementById('xadboom-nav-toggle');
+  if (toggle && expanded) {
+    var isCollapsed = localStorage.getItem('xadboom_nav_collapsed') === 'true';
+    if (isCollapsed) {
+      expanded.style.display = 'none';
+      toggle.innerText = '▴ All Pages';
+    }
+    toggle.addEventListener('click', function() {
+      if (expanded.style.display === 'none') {
+        expanded.style.display = 'flex';
+        toggle.innerText = '▾';
+        localStorage.setItem('xadboom_nav_collapsed', 'false');
+      } else {
+        expanded.style.display = 'none';
+        toggle.innerText = '▴ All Pages';
+        localStorage.setItem('xadboom_nav_collapsed', 'true');
+      }
+    });
+  }
+
+  // Cart Drawer Logic
+  var drawer = document.getElementById('xadboom-cart-drawer');
+  var backdrop = document.getElementById('xadboom-cart-backdrop');
+  var closeBtn = document.getElementById('xadboom-cart-close');
+  var openPill = document.getElementById('xadboom-open-cart-pill');
+  var countdownEl = document.getElementById('xadboom-countdown');
+  var itemsContainer = document.getElementById('xadboom-cart-items');
+  var totalEl = document.getElementById('xadboom-cart-total');
+  var pillCount = document.getElementById('xadboom-pill-cart-count');
+  var checkoutBtn = document.getElementById('xadboom-checkout-btn');
+  var releaseBtn = document.getElementById('xadboom-release-btn');
+
+  function openCart() {
+    if (drawer && backdrop) {
+      drawer.style.display = 'flex';
+      backdrop.style.display = 'block';
+    }
+  }
+
+  function closeCart() {
+    if (drawer && backdrop) {
+      drawer.style.display = 'none';
+      backdrop.style.display = 'none';
+    }
+  }
+
+  if (closeBtn) closeBtn.addEventListener('click', closeCart);
+  if (backdrop) backdrop.addEventListener('click', closeCart);
+  if (openPill) openPill.addEventListener('click', openCart);
+
+  // Hook all existing "Bag" buttons in headers
+  document.querySelectorAll('button, a').forEach(function(el) {
+    var txt = (el.innerText || '').toLowerCase();
+    if (txt.includes('bag') && !el.id.includes('xadboom')) {
+      el.addEventListener('click', function(e) {
+        e.preventDefault();
+        openCart();
+      });
+    }
+  });
+
+  // 15-Minute Countdown Timer
+  var remainingSeconds = 885;
+  setInterval(function() {
+    if (remainingSeconds > 0) {
+      remainingSeconds--;
+      var m = Math.floor(remainingSeconds / 60);
+      var s = remainingSeconds % 60;
+      if (countdownEl) {
+        countdownEl.innerText = (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s;
+      }
+    } else {
+      if (countdownEl) countdownEl.innerText = '00:00 (EXPIRED)';
+    }
+  }, 1000);
+
+  // Release lock
+  if (releaseBtn) {
+    releaseBtn.addEventListener('click', function() {
+      if (itemsContainer) {
+        itemsContainer.innerHTML = '<div style="text-align:center;padding:40px 10px;color:#7A6E69;font-family:monospace;font-size:12px;">ALLOCATION HOLD RELEASED BACK TO VAULT.<br><br><button onclick="location.reload()" style="padding:8px 16px;background:#0A0A0A;color:#fff;border-radius:9999px;border:0;font-size:11px;cursor:pointer;">RESERVE ANOTHER PIECE ↗</button></div>';
+      }
+      if (totalEl) totalEl.innerText = '$0';
+      if (pillCount) pillCount.innerText = '0';
+    });
+  }
+
+  // Checkout action
+  if (checkoutBtn) {
+    checkoutBtn.addEventListener('click', function() {
+      checkoutBtn.innerText = 'DISPATCHING TO LEDGER...';
+      setTimeout(function() {
+        if (itemsContainer) {
+          itemsContainer.innerHTML = 
+            '<div style="text-align:center;padding:30px 10px;">' +
+              '<div style="width:48px;height:48px;border-radius:50%;background:#0A0A0A;color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:22px;">✓</div>' +
+              '<h4 style="font-family:Space Grotesk,monospace;font-size:15px;margin:0 0 8px;text-transform:uppercase;">ACQUISITION CONFIRMED</h4>' +
+              '<p style="font-size:12px;color:#7A6E69;line-height:1.5;">Order: XB-DISPATCH-948210<br>Certificate: PROV-CERT-LV0312</p>' +
+              '<p style="font-size:11px;background:#FFF1EC;padding:10px;border-radius:8px;border:1px solid #D8C3BC;margin-top:16px;">Curatorial crate scheduled for dual-signed courier dispatch. Provenance ledger synchronized.</p>' +
+            '</div>';
+        }
+        if (totalEl) totalEl.innerText = '$0';
+        if (pillCount) pillCount.innerText = '0';
+        checkoutBtn.style.display = 'none';
+        if (releaseBtn) releaseBtn.style.display = 'none';
+      }, 500);
+    });
+  }
+
+  // Hook "ACQUIRE / RESERVE" buttons
+  document.querySelectorAll('button, a').forEach(function(el) {
+    var txt = (el.innerText || '').toLowerCase();
+    if (txt.includes('acquire') || txt.includes('reserve') || txt.includes('the collection') || txt.includes('take allocation')) {
+      if (el.getAttribute('href') && (el.getAttribute('href').includes('catalog') || el.getAttribute('href').startsWith('#'))) return;
+      el.addEventListener('click', function(e) {
+        e.preventDefault();
+        openCart();
+      });
+    }
+  });
+
+  // Client-side Architectural Spec Download (CSV & OBJ generator)
+  function downloadFile(content, fileName, mimeType) {
+    var blob = new Blob([content], { type: mimeType });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = fileName;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }
+
+  document.querySelectorAll('button, a').forEach(function(el) {
+    var txt = (el.innerText || '').toLowerCase();
+    if (txt.includes('spec') || txt.includes('3d') || txt.includes('tear sheet')) {
+      if (!el.getAttribute('href') || el.getAttribute('href') === '#' || el.getAttribute('href').startsWith('#spec')) {
+        el.addEventListener('click', function(e) {
+          e.preventDefault();
+          var csv = "XADBOOM CURATED INTERIOR ARCHITECTURE — SPECIFICATION SHEET\n" +
+            "Archive ID,LV-0312\n" +
+            "Piece Title,Lumen Void Lounge Chair\n" +
+            "Collaborating Architect,Alireza Taghaboni\n" +
+            "Affiliated Studio,NextOffice\n" +
+            "Typology,Seating & Lounges\n" +
+            "Materials / Substrates,Solid Carved Iranian Walnut & Bouclé Wool\n" +
+            "Standard Dimensions,840 × 920 × 760 mm\n" +
+            "Net Weight,28 kg\n" +
+            "Textile Martindale Rating,65000 Cycles\n" +
+            "Edition Run,03 / 12 (3 Available)\n" +
+            "Atelier Crate Logistics,Rigid Plywood Museum Crate / Shockwatch Monitored\n" +
+            "Provenance Node,Tehran Atelier / Zurich Vault\n" +
+            "Standards,ISO 9001 / BIM 3D Lightweight Compatible (.OBJ / .GLB)\n";
+          downloadFile(csv, "Xadboom_Spec_LV0312_Lumen_Void.csv", "text/csv");
+        });
+      }
+    }
+  });
+
+  // Client-side Contact & Inquiry form submission with feedback
+  document.querySelectorAll('form').forEach(function(form) {
+    form.addEventListener('submit', function(e) {
+      var emailInput = form.querySelector('input[type="email"]');
+      if (emailInput && !form.getAttribute('action')) {
+        e.preventDefault();
+        var submitBtn = form.querySelector('button[type="submit"]') || form.querySelector('button');
+        var originalText = submitBtn ? submitBtn.innerText : 'Submit';
+        if (submitBtn) submitBtn.innerText = 'REGISTERING INQUIRY...';
+        setTimeout(function() {
+          if (submitBtn) submitBtn.innerText = '✓ INQUIRY REGISTERED (SLA: 3H)';
+          alert('Your curatorial inquiry has been registered with the Xadboom Atelier desk. Reference: INQ-2026. Curator SLA response time: 3 hours.');
+          if (submitBtn) submitBtn.innerText = originalText;
+        }, 400);
+      }
+    });
+  });
+
+  // Wire Admin Sidebar relative links so they work on GitHub Pages
+  var rootRel = '../';
+  document.querySelectorAll('nav [data-path]').forEach(function(el) {
+    var p = el.getAttribute('data-path');
+    var map = {
+      'overview': rootRel + 'xadboom_atelier_admin_operations_inventory_lock_harmonized/code.html',
+      'pieces-catalog': rootRel + 'pieces_catalog_xadboom_atelier_admin/code.html',
+      'curatorial-archives': rootRel + 'categories_typologies_xadboom_atelier_admin/code.html',
+      'acquisitions': rootRel + 'orders_dispatches_xadboom_atelier_admin/code.html',
+      'provenance-records': rootRel + 'inquiries_forms_xadboom_atelier_admin/code.html',
+      'settings': rootRel + 'users_accounts_xadboom_atelier_admin/code.html'
+    };
+    if (map[p]) el.setAttribute('href', map[p]);
+  });
+
+  document.querySelectorAll('aside a, nav a').forEach(function(a) {
+    var txt = (a.innerText || '').trim();
+    if (txt.includes('Overview & Dashboard')) a.setAttribute('href', rootRel + 'xadboom_atelier_admin_operations_inventory_lock_harmonized/code.html');
+    else if (txt.includes('Pieces Catalog')) a.setAttribute('href', rootRel + 'pieces_catalog_xadboom_atelier_admin/code.html');
+    else if (txt.includes('Categories')) a.setAttribute('href', rootRel + 'categories_typologies_xadboom_atelier_admin/code.html');
+    else if (txt.includes('Designers & Collaborators')) a.setAttribute('href', rootRel + 'designers_collaborators_xadboom_atelier_admin/code.html');
+    else if (txt.includes('Orders & Dispatches')) a.setAttribute('href', rootRel + 'orders_dispatches_xadboom_atelier_admin/code.html');
+    else if (txt.includes('Users & Accounts')) a.setAttribute('href', rootRel + 'users_accounts_xadboom_atelier_admin/code.html');
+    else if (txt.includes('Inquiries & Forms')) a.setAttribute('href', rootRel + 'inquiries_forms_xadboom_atelier_admin/code.html');
+  });
+
+  // Wire "+ Add New Piece" button
+  document.querySelectorAll('button, a').forEach(function(btn) {
+    var txt = (btn.innerText || '').trim();
+    if (txt.includes('Add New Piece')) {
+      btn.style.cursor = 'pointer';
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.location.href = rootRel + 'add_new_piece_xadboom_atelier_admin/code.html';
+      });
+    }
+  });
+
+  // Direct piece card clicks to product detail page
+  document.querySelectorAll('[data-purpose="product-card"], article').forEach(function(card) {
+    var txt = card.innerText || '';
+    if (txt.includes('Lumen Void Lounge Chair')) {
+      card.style.cursor = 'pointer';
+      card.addEventListener('click', function(e) {
+        if (!e.target.closest('a') && !e.target.closest('button')) {
+          window.location.href = rootRel + 'lumen_void_lounge_chair_product_detail_xadboom/code.html';
+        }
+      });
+    }
+  });
+})();
+</script>
+<!-- END: Xadboom Unified Navigation & Cart Lock Engine -->
+</body></html>

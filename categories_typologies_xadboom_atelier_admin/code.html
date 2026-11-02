@@ -1,0 +1,880 @@
+<!DOCTYPE html><html lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed-dim": "#d7c2bb", "outline-variant": "#c4c7c7", "inverse-primary": "#c9c6c5", "on-tertiary": "#ffffff", "on-surface-variant": "#444748", "primary": "#000000", "surface": "#F7E9E3", "surface-bright": "#F7E9E3", "tertiary-fixed": "#f4ded7", "on-background": "#231a16", "surface-container-highest": "#e5d3cc", "on-error": "#ffffff", "on-primary": "#ffffff", "primary-fixed-dim": "#c9c6c5", "tertiary-container": "#241915", "on-secondary-container": "#676160", "surface-tint": "#5f5e5e", "secondary": "#635d5c", "inverse-on-surface": "#ffede7", "on-secondary": "#ffffff", "surface-container-low": "#F7E9E3", "outline": "#747878", "error": "#ba1a1a", "tertiary": "#000000", "on-tertiary-fixed": "#241915", "secondary-container": "#e6dedc", "on-tertiary-fixed-variant": "#52433e", "surface-variant": "#dfcdc7", "on-secondary-fixed": "#1e1b1a", "on-tertiary-container": "#92807a", "surface-container-high": "#ECDAD4", "on-secondary-fixed-variant": "#4b4644", "on-primary-fixed-variant": "#474646", "surface-container-lowest": "#ffffff", "on-primary-container": "#858383", "error-container": "#ffdad6", "on-surface": "#231a16", "secondary-fixed-dim": "#cdc5c3", "inverse-surface": "#392e2a", "background": "#F7E9E3", "primary-container": "#1c1b1b", "primary-fixed": "#e5e2e1", "surface-dim": "#e8d6d0", "secondary-fixed": "#e9e1df", "on-error-container": "#93000a", "on-primary-fixed": "#1c1b1b", "surface-container": "#e6d5cf" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-desktop": "4rem", "space-3xl": "6rem", "space-xl": "2.5rem", "space-md": "1rem", "space-lg": "1.5rem", "margin-tablet": "2.5rem", "space-xs": "0.25rem", "gutter": "1.5rem", "gutter-desktop": "2.5rem", "space-2xl": "4rem", "space-sm": "0.5rem", "margin": "1.25rem" }, "fontFamily": { "body-md": [ "DM Sans" ], "display-mobile": [ "Space Grotesk" ], "headline-lg": [ "Space Grotesk" ], "display": [ "Space Grotesk" ], "curatorial-quote": [ "Newsreader" ], "headline-sm": [ "Space Grotesk" ], "curatorial-quote-mobile": [ "Newsreader" ], "label-md": [ "Space Grotesk" ], "headline-md": [ "Space Grotesk" ], "label-caps": [ "Space Grotesk" ], "body-lg": [ "DM Sans" ], "headline-lg-mobile": [ "Space Grotesk" ] }, "fontSize": { "body-md": [ "0.9375rem", { "lineHeight": "1.5rem", "letterSpacing": "0", "fontWeight": "400" } ], "display-mobile": [ "2.75rem", { "lineHeight": "3rem", "letterSpacing": "-0.03em", "fontWeight": "400" } ], "headline-lg": [ "3.5rem", { "lineHeight": "3.75rem", "letterSpacing": "-0.03em", "fontWeight": "400" } ], "display": [ "5rem", { "lineHeight": "5.25rem", "letterSpacing": "-0.04em", "fontWeight": "400" } ], "curatorial-quote": [ "1.875rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "headline-sm": [ "1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "curatorial-quote-mobile": [ "1.375rem", { "lineHeight": "2rem", "letterSpacing": "0", "fontWeight": "400" } ], "label-md": [ "0.8125rem", { "lineHeight": "1.125rem", "letterSpacing": "0.02em", "fontWeight": "500" } ], "headline-md": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "500" } ], "label-caps": [ "0.6875rem", { "lineHeight": "1rem", "letterSpacing": "0.12em", "fontWeight": "600" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "headline-lg-mobile": [ "2.25rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.02em", "fontWeight": "400" } ] } } } };</script></head><body class="bg-[#F7E9E3] font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-20 bg-[#F7E9E3] border-r border-[#ECDAD4] z-50 flex flex-col items-center py-6"><div class="mb-8 flex flex-col items-center justify-center"><div class="w-10 h-10 bg-primary flex items-center justify-center"><span class="font-headline-sm text-headline-sm text-on-primary font-bold tracking-widest">X</span></div><span class="font-label-caps text-label-caps text-on-surface-variant uppercase mt-1 tracking-widest text-[9px]">ATELIER</span></div><nav class="flex-1 flex flex-col items-center gap-3 w-full px-2" data-active-classes="bg-primary text-on-primary"><a class="w-12 h-12 flex items-center justify-center text-on-surface-variant hover:bg-[#ECDAD4] hover:text-on-surface transition-colors" data-path="overview" href="#" title="Atelier Overview"><span class="material-symbols-outlined text-[20px]">space_dashboard</span></a><a class="w-12 h-12 flex items-center justify-center hover:bg-[#ECDAD4] hover:text-on-surface transition-colors bg-primary text-on-primary" data-path="pieces-catalog" href="#" title="Pieces Catalog"><span class="material-symbols-outlined text-[20px]">category</span></a><a class="w-12 h-12 flex items-center justify-center text-on-surface-variant hover:bg-[#ECDAD4] hover:text-on-surface transition-colors" data-path="curatorial-archives" href="#" title="Curatorial Archives"><span class="material-symbols-outlined text-[20px]">auto_stories</span></a><a class="w-12 h-12 flex items-center justify-center text-on-surface-variant hover:bg-[#ECDAD4] hover:text-on-surface transition-colors" data-path="acquisitions" href="#" title="Acquisitions &amp; Orders"><span class="material-symbols-outlined text-[20px]">receipt_long</span></a><a class="w-12 h-12 flex items-center justify-center text-on-surface-variant hover:bg-[#ECDAD4] hover:text-on-surface transition-colors" data-path="provenance-records" href="#" title="Provenance Records"><span class="material-symbols-outlined text-[20px]">history_edu</span></a></nav><div class="flex flex-col items-center gap-3 w-full px-2 pt-4"><a class="w-12 h-12 flex items-center justify-center text-on-surface-variant hover:bg-[#ECDAD4] hover:text-on-surface transition-colors" data-path="settings" href="#" title="Settings"><span class="material-symbols-outlined text-[20px]">tune</span></a></div></aside><div class="pl-20"><header class="fixed top-0 left-20 right-0 h-16 bg-[#F7E9E3]/95 border-b border-[#ECDAD4] backdrop-blur-md z-40 px-gutter flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.02)]"><div class="flex items-center gap-space-md"><img alt="logo-sign.png" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wk0-0X9HkDV8LQxnb_5jBTel0WAkRdos1tcICkrZsV7mwIf7La27Nf5-q9jzV5I1FiFhYRYEoQRv4nxfLgr0oF_M08ZWBdjdF-nJgwnn6OUlx5het2dcfh_jf7B0JcfyfcVBfoQPdAo9ozGFyyGopwooHXhD2Kq8U96kkT_yl9Mi4sbyg1nDGkQRwNwmdHhDHzT8Ik3nR0nYVm_XXJ52KqSpciOThdo6oR4ZYB5SRe-7ijO04sinliodg0uwEf-ffpjprqU4vkD-k"><div class="flex items-center gap-space-sm font-label-caps text-label-caps tracking-widest text-on-surface-variant uppercase"><span class="text-on-surface">Xadboom Atelier</span><span class="text-outline-variant font-normal">/</span><span class="">Admin Console</span><span class="text-outline-variant font-normal">/</span><span class="text-on-surface font-semibold">Monograph View</span></div></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm font-label-caps text-label-caps text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="">VAULT CONNECTED</span></div><div class="h-4 w-[1px] bg-[#dfcdc7]"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right"><span class="font-label-caps text-label-caps text-on-surface tracking-wider font-semibold">JEAN-CLAUDE M.</span><span class="font-label-caps text-label-caps text-on-surface-variant text-[9px]">CHIEF CURATOR</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 bg-[#F7E9E3] w-full px-gutter min-h-screen pb-12"><div class="flex flex-col w-full">
+<!-- Script to update shell sidebar active icon state if present -->
+<script>
+    (function () {
+      const navLinks = document.querySelectorAll('aside nav a');
+      navLinks.forEach((link) => {
+        if (link.getAttribute('data-path') === 'pieces-catalog') {
+          link.classList.add('bg-primary', 'text-on-primary');
+          link.classList.remove('text-on-surface-variant');
+        }
+      });
+    })();
+  </script>
+<!-- Page Header Area -->
+<header class="w-full flex flex-col md:flex-row md:items-end justify-between gap-space-lg mb-space-xl">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm font-label-caps text-label-caps tracking-widest text-[#786d67] uppercase mb-space-xs">
+<span class="">Curatorial Atelier</span>
+<span class="text-[#c4c7c7]">/</span>
+<span class="">Administration</span>
+<span class="text-[#c4c7c7]">/</span>
+<span class="text-[#0a0a0a] font-semibold">Categories &amp; Typologies</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-[#0a0a0a] tracking-tight">Categories &amp; Typologies</h1>
+<p class="font-body-md text-body-md text-[#786d67] max-w-3xl mt-space-xs">
+        Curate physical asset classifications, spatial typologies, architectural attribute schemas, and live allocation quotas across atelier collections.
+      </p>
+</div>
+<!-- Top Right Actions -->
+<div class="flex items-center gap-space-sm self-start md:self-auto shrink-0">
+<button class="inline-flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-[#FBF0EC] text-[#0a0a0a] font-label-caps text-label-caps uppercase tracking-wider hover:bg-[#ECDAD4] transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+        Export Schema (CSV)
+      </button>
+<button class="inline-flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-[#0a0a0a] text-[#ECDAD4] font-label-caps text-label-caps uppercase tracking-wider hover:bg-[#292524] transition-colors shadow-sm" id="open-add-modal-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+        + Add New Category
+      </button>
+</div>
+</header>
+<!-- Top KPI Summary Cards (4 rounded cards on #FBF0EC) -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-xl">
+<!-- Card 1 -->
+<div class="rounded-lg bg-[#FBF0EC] p-space-lg flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-caps text-label-caps text-[#786d67] uppercase tracking-wider">Total Active Typologies</span>
+<span class="material-symbols-outlined text-[#786d67] text-[20px]">category</span>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg text-[#0a0a0a] tracking-tight leading-none mb-1">5</div>
+<div class="font-body-md text-body-md text-[#2b2624] font-medium">Curated Categories</div>
+<div class="font-label-caps text-label-caps text-[#786d67] uppercase tracking-wider mt-1">18 Objects Cataloged (100% Mapped)</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="rounded-lg bg-[#FBF0EC] p-space-lg flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-caps text-label-caps text-[#786d67] uppercase tracking-wider">Leading Allocation</span>
+<span class="material-symbols-outlined text-[#786d67] text-[20px]">pie_chart</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-[#0a0a0a] font-semibold tracking-tight truncate mb-1">Seating &amp; Lounges</div>
+<div class="font-body-md text-body-md text-[#2b2624] font-medium">6 Pieces Cataloged</div>
+<div class="font-label-caps text-label-caps text-[#786d67] uppercase tracking-wider mt-1">44% Vault Volume Allocation</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="rounded-lg bg-[#FBF0EC] p-space-lg flex flex-col justify-between shadow-sm"><div class="flex items-center justify-between mb-space-sm"><span class="font-label-caps text-label-caps text-[#786d67] uppercase tracking-wider">Dimensional &amp; 3D Assets</span><span class="material-symbols-outlined text-[#786d67] text-[20px]">view_in_ar</span></div><div class=""><div class="font-headline-lg text-headline-lg text-[#0a0a0a] tracking-tight leading-none mb-1">100% Ready</div><div class="font-body-md text-body-md text-[#2b2624] font-medium">Excel/CSV Specs &amp; Schematics</div><div class="font-label-caps text-label-caps text-[#786d67] uppercase tracking-wider mt-1">Standalone 3D Models (.OBJ / .GLB)</div></div></div>
+<!-- Card 4 -->
+<div class="rounded-lg bg-[#FBF0EC] p-space-lg flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-caps text-label-caps text-[#786d67] uppercase tracking-wider">Bespoke Attributes</span>
+<span class="material-symbols-outlined text-[#786d67] text-[20px]">tune</span>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg text-[#0a0a0a] tracking-tight leading-none mb-1">14</div>
+<div class="font-body-md text-body-md text-[#2b2624] font-medium">Spatial Parameters</div>
+<div class="font-label-caps text-label-caps text-[#786d67] uppercase tracking-wider mt-1">Joinery &amp; Finish Matrices</div>
+</div>
+</div>
+</section>
+<!-- Toolbar & Search Section (in a #FBF0EC rounded card) -->
+<section class="rounded-lg bg-[#FBF0EC] p-space-md mb-space-lg shadow-sm">
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Search Input -->
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[#786d67] text-[20px]">search</span>
+<input class="w-full pl-10 pr-4 py-2 bg-[#ECDAD4]/50 rounded-lg text-body-md font-body-md text-[#0a0a0a] placeholder:text-[#786d67] focus:outline-none focus:bg-[#ECDAD4] transition-all" id="typology-search-input" placeholder="Search typologies by name, slug, or parameter schema..." type="text">
+</div>
+<!-- Controls & Filter Pills -->
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<!-- Status Filter Pill -->
+<div class="relative inline-block">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#ECDAD4] text-[#0a0a0a] font-label-caps text-label-caps uppercase tracking-wider hover:bg-[#e2cecaa] transition-colors" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-[#0a0a0a]"></span>
+<span class="">Status: All (5)</span>
+<span class="material-symbols-outlined text-[16px] text-[#786d67]">expand_more</span>
+</button>
+</div>
+<!-- Sort Filter Pill -->
+<div class="relative inline-block">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#ECDAD4] text-[#0a0a0a] font-label-caps text-label-caps uppercase tracking-wider hover:bg-[#e2cecaa] transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] text-[#786d67]">sort</span>
+<span class="">Sort: Allocation Volume</span>
+<span class="material-symbols-outlined text-[16px] text-[#786d67]">expand_more</span>
+</button>
+</div>
+<!-- View Mode Switcher -->
+<div class="flex items-center p-0.5 bg-[#ECDAD4] rounded-lg">
+<button class="px-2.5 py-1 rounded bg-[#0a0a0a] text-[#ECDAD4] font-label-caps text-label-caps uppercase tracking-wider flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[15px]">table_rows</span>
+<span class="">Catalog</span>
+</button>
+<button class="px-2.5 py-1 rounded text-[#786d67] hover:text-[#0a0a0a] font-label-caps text-label-caps uppercase tracking-wider flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">grid_view</span>
+<span class="">Grid</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Categories Content: Interactive Table / Catalog on #FBF0EC -->
+<section class="rounded-lg bg-[#FBF0EC] shadow-sm overflow-hidden mb-space-xl">
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse" id="typologies-table">
+<thead>
+<tr class="bg-[#f5e3dc] text-left">
+<th class="py-3 px-space-lg font-label-caps text-label-caps uppercase tracking-widest text-[#786d67] w-auto">Typology &amp; Architecture</th>
+<th class="py-3 px-space-md font-label-caps text-label-caps uppercase tracking-widest text-[#786d67]">Active Pieces</th>
+<th class="py-3 px-space-md font-label-caps text-label-caps uppercase tracking-widest text-[#786d67]">Vault Allocation &amp; Units</th>
+
+
+<th class="py-3 px-space-md font-label-caps text-label-caps uppercase tracking-widest text-[#786d67]">Demand / Status</th>
+<th class="py-3 px-space-lg font-label-caps text-label-caps uppercase tracking-widest text-[#786d67] text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-transparent">
+<!-- Row 1: Seating & Lounges -->
+<tr class="hover:bg-[#ECDAD4]/40 transition-colors group">
+<td class="py-space-md px-space-lg align-top">
+<div class="flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-[#0a0a0a] text-[#ECDAD4] flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">chair</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-[#0a0a0a] font-semibold">Seating &amp; Lounges</span>
+</div>
+<span class="font-label-caps text-label-caps text-[#786d67] tracking-wider font-mono">/typology/seating</span><div class="flex items-center gap-1.5 mt-1"><span class="px-1.5 py-0.5 rounded bg-[#ECDAD4] text-[#0a0a0a] font-label-caps text-[9px] uppercase tracking-wider font-semibold">Schematic &amp; Excel Specs</span><span class="px-1.5 py-0.5 rounded bg-[#ECDAD4]/50 text-[#786d67] font-label-caps text-[9px] uppercase tracking-wider">.OBJ / .GLB</span></div>
+
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-[#0a0a0a] font-semibold">6 Pieces</span>
+<span class="font-body-md text-body-md text-xs text-[#786d67] mt-0.5">Lumen Void, Radial Ash, Cantilever II</span>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5 font-label-caps text-label-caps font-semibold text-[#0a0a0a]">
+<span class="">8 Allocated</span>
+<span class="text-[#786d67]">·</span>
+<span class="text-amber-800 font-bold">3 Low Stock</span>
+</div>
+<span class="font-body-md text-body-md text-xs text-[#786d67] mt-0.5">12 Units Total Manufactured</span>
+<!-- Mini Progress Bar -->
+<div class="w-24 h-1.5 rounded-full bg-[#ECDAD4] mt-2 overflow-hidden">
+<div class="h-full bg-[#0a0a0a] rounded-full" style="width: 66%"></div>
+</div>
+</div>
+</td>
+
+
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col items-start gap-1">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-[#0a0a0a] text-[#ECDAD4] font-label-caps text-label-caps uppercase text-[10px] tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                  Active
+                </span>
+<span class="font-label-caps text-label-caps text-[#786d67] text-[10px] uppercase mt-0.5">44% Demand Vol</span>
+</div>
+</td>
+<td class="py-space-md px-space-lg align-top text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-1.5 rounded-lg bg-[#ECDAD4] hover:bg-[#0a0a0a] hover:text-[#ECDAD4] text-[#0a0a0a] transition-colors" title="Edit Schema" type="button">
+<span class="material-symbols-outlined text-[18px]">schema</span>
+</button>
+<button class="p-1.5 rounded-lg bg-[#ECDAD4] hover:bg-[#0a0a0a] hover:text-[#ECDAD4] text-[#0a0a0a] transition-colors" title="Manage Pieces" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Tables & Consoles -->
+<tr class="hover:bg-[#ECDAD4]/40 transition-colors group">
+<td class="py-space-md px-space-lg align-top">
+<div class="flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-[#0a0a0a] text-[#ECDAD4] flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">table_bar</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-[#0a0a0a] font-semibold">Tables &amp; Consoles</span>
+</div>
+<span class="font-label-caps text-label-caps text-[#786d67] tracking-wider font-mono">/typology/tables</span><div class="flex items-center gap-1.5 mt-1"><span class="px-1.5 py-0.5 rounded bg-[#ECDAD4] text-[#0a0a0a] font-label-caps text-[9px] uppercase tracking-wider font-semibold">Schematic &amp; CSV Specs</span><span class="px-1.5 py-0.5 rounded bg-[#ECDAD4]/50 text-[#786d67] font-label-caps text-[9px] uppercase tracking-wider">.OBJ / .GLTF</span></div>
+
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-[#0a0a0a] font-semibold">5 Pieces</span>
+<span class="font-body-md text-body-md text-xs text-[#786d67] mt-0.5">Tectonic Monolith, Travertine Low Table</span>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5 font-label-caps text-label-caps font-semibold text-[#0a0a0a]">
+<span class="">6 Allocated</span>
+<span class="text-[#786d67]">·</span>
+<span class="text-emerald-800">2 In Vault</span>
+</div>
+<span class="font-body-md text-body-md text-xs text-[#786d67] mt-0.5">8 Units Total Manufactured</span>
+<div class="w-24 h-1.5 rounded-full bg-[#ECDAD4] mt-2 overflow-hidden">
+<div class="h-full bg-[#0a0a0a] rounded-full" style="width: 75%"></div>
+</div>
+</div>
+</td>
+
+
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col items-start gap-1">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-[#0a0a0a] text-[#ECDAD4] font-label-caps text-label-caps uppercase text-[10px] tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                  Active
+                </span>
+<span class="font-label-caps text-label-caps text-[#786d67] text-[10px] uppercase mt-0.5">28% Demand Vol</span>
+</div>
+</td>
+<td class="py-space-md px-space-lg align-top text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-1.5 rounded-lg bg-[#ECDAD4] hover:bg-[#0a0a0a] hover:text-[#ECDAD4] text-[#0a0a0a] transition-colors" title="Edit Schema" type="button">
+<span class="material-symbols-outlined text-[18px]">schema</span>
+</button>
+<button class="p-1.5 rounded-lg bg-[#ECDAD4] hover:bg-[#0a0a0a] hover:text-[#ECDAD4] text-[#0a0a0a] transition-colors" title="Manage Pieces" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Architectural Lighting -->
+<tr class="hover:bg-[#ECDAD4]/40 transition-colors group">
+<td class="py-space-md px-space-lg align-top">
+<div class="flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-[#0a0a0a] text-[#ECDAD4] flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">light</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-[#0a0a0a] font-semibold">Architectural Lighting</span>
+</div>
+<span class="font-label-caps text-label-caps text-[#786d67] tracking-wider font-mono">/typology/lighting</span><div class="flex items-center gap-1.5 mt-1"><span class="px-1.5 py-0.5 rounded bg-[#ECDAD4] text-[#0a0a0a] font-label-caps text-[9px] uppercase tracking-wider font-semibold">Schematic &amp; Excel Specs</span><span class="px-1.5 py-0.5 rounded bg-[#ECDAD4]/50 text-[#786d67] font-label-caps text-[9px] uppercase tracking-wider">.OBJ / .3DM</span></div>
+
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-[#0a0a0a] font-semibold">3 Pieces</span>
+<span class="font-body-md text-body-md text-xs text-[#786d67] mt-0.5">Luma Wood Arc Lamp, Shadow Orb</span>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5 font-label-caps text-label-caps font-semibold text-[#0a0a0a]">
+<span class="">5 Available</span>
+<span class="text-[#786d67]">·</span>
+<span class="text-secondary font-medium">10 Installed</span>
+</div>
+<span class="font-body-md text-body-md text-xs text-[#786d67] mt-0.5">15 Units Total Manufactured</span>
+<div class="w-24 h-1.5 rounded-full bg-[#ECDAD4] mt-2 overflow-hidden">
+<div class="h-full bg-[#0a0a0a] rounded-full" style="width: 33%"></div>
+</div>
+</div>
+</td>
+
+
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col items-start gap-1">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-[#0a0a0a] text-[#ECDAD4] font-label-caps text-label-caps uppercase text-[10px] tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                  Active
+                </span>
+<span class="font-label-caps text-label-caps text-[#786d67] text-[10px] uppercase mt-0.5">16% Demand Vol</span>
+</div>
+</td>
+<td class="py-space-md px-space-lg align-top text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-1.5 rounded-lg bg-[#ECDAD4] hover:bg-[#0a0a0a] hover:text-[#ECDAD4] text-[#0a0a0a] transition-colors" title="Edit Schema" type="button">
+<span class="material-symbols-outlined text-[18px]">schema</span>
+</button>
+<button class="p-1.5 rounded-lg bg-[#ECDAD4] hover:bg-[#0a0a0a] hover:text-[#ECDAD4] text-[#0a0a0a] transition-colors" title="Manage Pieces" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Daybeds & Benches -->
+<tr class="hover:bg-[#ECDAD4]/40 transition-colors group">
+<td class="py-space-md px-space-lg align-top">
+<div class="flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-[#0a0a0a] text-[#ECDAD4] flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">bed</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-[#0a0a0a] font-semibold">Daybeds &amp; Benches</span>
+</div>
+<span class="font-label-caps text-label-caps text-[#786d67] tracking-wider font-mono">/typology/daybeds</span><div class="flex items-center gap-1.5 mt-1"><span class="px-1.5 py-0.5 rounded bg-[#ECDAD4] text-[#0a0a0a] font-label-caps text-[9px] uppercase tracking-wider font-semibold">Schematic &amp; CSV Specs</span><span class="px-1.5 py-0.5 rounded bg-[#ECDAD4]/50 text-[#786d67] font-label-caps text-[9px] uppercase tracking-wider">.OBJ / .GLB</span></div>
+
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-[#0a0a0a] font-semibold">2 Pieces</span>
+<span class="font-body-md text-body-md text-xs text-[#786d67] mt-0.5">Cantilever Cane Daybed, Linear Bench</span>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5 font-label-caps text-label-caps font-semibold text-[#0a0a0a]">
+<span class="text-amber-800 font-bold">1 Left In Vault</span>
+<span class="text-[#786d67]">·</span>
+<span class="">4 Allocated</span>
+</div>
+<span class="font-body-md text-body-md text-xs text-[#786d67] mt-0.5">5 Units Total (Limited Batch)</span>
+<div class="w-24 h-1.5 rounded-full bg-[#ECDAD4] mt-2 overflow-hidden">
+<div class="h-full bg-amber-800 rounded-full" style="width: 20%"></div>
+</div>
+</div>
+</td>
+
+
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col items-start gap-1">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-[#ECDAD4] text-amber-900 font-label-caps text-label-caps uppercase text-[10px] tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span>
+                  Low Stock
+                </span>
+<span class="font-label-caps text-label-caps text-[#786d67] text-[10px] uppercase mt-0.5">8% Demand Vol</span>
+</div>
+</td>
+<td class="py-space-md px-space-lg align-top text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-1.5 rounded-lg bg-[#ECDAD4] hover:bg-[#0a0a0a] hover:text-[#ECDAD4] text-[#0a0a0a] transition-colors" title="Edit Schema" type="button">
+<span class="material-symbols-outlined text-[18px]">schema</span>
+</button>
+<button class="p-1.5 rounded-lg bg-[#ECDAD4] hover:bg-[#0a0a0a] hover:text-[#ECDAD4] text-[#0a0a0a] transition-colors" title="Manage Pieces" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Spatial Accents & Storage -->
+<tr class="hover:bg-[#ECDAD4]/40 transition-colors group">
+<td class="py-space-md px-space-lg align-top">
+<div class="flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-[#0a0a0a] text-[#ECDAD4] flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">shelves</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-[#0a0a0a] font-semibold">Spatial Accents &amp; Storage</span>
+</div>
+<span class="font-label-caps text-label-caps text-[#786d67] tracking-wider font-mono">/typology/accents</span><div class="flex items-center gap-1.5 mt-1"><span class="px-1.5 py-0.5 rounded bg-[#ECDAD4] text-[#0a0a0a] font-label-caps text-[9px] uppercase tracking-wider font-semibold">Schematic &amp; Excel Specs</span><span class="px-1.5 py-0.5 rounded bg-[#ECDAD4]/50 text-[#786d67] font-label-caps text-[9px] uppercase tracking-wider">.OBJ / .3DM</span></div>
+
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-[#0a0a0a] font-semibold">2 Pieces</span>
+<span class="font-body-md text-body-md text-xs text-[#786d67] mt-0.5">Silence Fluted Credenza, Stone Totem</span>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5 font-label-caps text-label-caps font-semibold text-[#0a0a0a]">
+<span class="">2 Available</span>
+<span class="text-[#786d67]">·</span>
+<span class="text-secondary font-medium">2 Committed</span>
+</div>
+<span class="font-body-md text-body-md text-xs text-[#786d67] mt-0.5">4 Units Total Manufactured</span>
+<div class="w-24 h-1.5 rounded-full bg-[#ECDAD4] mt-2 overflow-hidden">
+<div class="h-full bg-[#0a0a0a] rounded-full" style="width: 50%"></div>
+</div>
+</div>
+</td>
+
+
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col items-start gap-1">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-[#0a0a0a] text-[#ECDAD4] font-label-caps text-label-caps uppercase text-[10px] tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                  Active
+                </span>
+<span class="font-label-caps text-label-caps text-[#786d67] text-[10px] uppercase mt-0.5">4% Demand Vol</span>
+</div>
+</td>
+<td class="py-space-md px-space-lg align-top text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-1.5 rounded-lg bg-[#ECDAD4] hover:bg-[#0a0a0a] hover:text-[#ECDAD4] text-[#0a0a0a] transition-colors" title="Edit Schema" type="button">
+<span class="material-symbols-outlined text-[18px]">schema</span>
+</button>
+<button class="p-1.5 rounded-lg bg-[#ECDAD4] hover:bg-[#0a0a0a] hover:text-[#ECDAD4] text-[#0a0a0a] transition-colors" title="Manage Pieces" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Pagination -->
+<div class="p-space-md bg-[#f7ebe6] flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<span class="font-label-caps text-label-caps text-[#786d67] uppercase tracking-wider">
+        Showing all 5 Typologies · 18 Associated Pieces · 100% Parameter Coverage
+      </span>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1 rounded-lg bg-[#FBF0EC] text-[#786d67] font-label-caps text-label-caps uppercase tracking-wider cursor-not-allowed opacity-50" type="button">
+          Previous
+        </button>
+<button class="px-3 py-1 rounded-lg bg-[#0a0a0a] text-[#ECDAD4] font-label-caps text-label-caps uppercase tracking-wider" type="button">
+          1
+        </button>
+<button class="px-3 py-1 rounded-lg bg-[#FBF0EC] text-[#786d67] font-label-caps text-label-caps uppercase tracking-wider cursor-not-allowed opacity-50" type="button">
+          Next
+        </button>
+</div>
+</div>
+</section>
+<!-- Bottom Section: Architectural Attribute & Spec Schema Registry on #FBF0EC -->
+<section class="rounded-lg bg-[#FBF0EC] p-space-xl shadow-sm mb-space-2xl">
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg">
+<div class="flex items-start gap-space-md max-w-3xl"><div class="w-12 h-12 rounded-lg bg-[#0a0a0a] text-[#ECDAD4] flex items-center justify-center shrink-0 mt-1"><span class="material-symbols-outlined text-[24px]">view_in_ar</span></div><div class="flex flex-col"><div class="flex items-center gap-2"><span class="font-label-caps text-label-caps text-[#786d67] uppercase tracking-widest">Asset &amp; Dimension Pipeline</span><span class="px-1.5 py-0.5 rounded bg-[#ECDAD4] text-[#0a0a0a] font-label-caps text-[9px] uppercase tracking-wider font-bold">Excel &amp; 3D Ready</span></div><h2 class="font-headline-sm text-headline-sm text-[#0a0a0a] font-semibold mt-0.5">Dimension Data &amp; 3D Model Asset Pipeline</h2><p class="font-body-md text-body-md text-[#2b2624] text-sm mt-1">Each category pairs dimensional schematic images with simple Excel/CSV dimension spreadsheets uploaded by clients and loaded by our server, along with standalone 3D models (.OBJ / .GLTF / .3DM) without complex BIM/Revit requirements.</p></div></div>
+<div class="flex flex-wrap items-center gap-space-sm shrink-0 w-full lg:w-auto"><button class="flex-1 lg:flex-none px-space-md py-2.5 rounded-lg bg-[#ECDAD4] text-[#0a0a0a] font-label-caps text-label-caps uppercase tracking-wider hover:bg-[#e2cfc9] transition-colors" type="button">Upload Dimension Excel/CSV</button><button class="flex-1 lg:flex-none px-space-md py-2.5 rounded-lg bg-[#0a0a0a] text-[#ECDAD4] font-label-caps text-label-caps uppercase tracking-wider hover:bg-[#292524] transition-colors" type="button">Export Spec Template (XLSX)</button></div>
+</div>
+</section>
+<!-- Interactive Modal: + Add Category -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm transition-opacity duration-200 opacity-100 pointer-events-auto" id="add-category-modal">
+<div class="w-full max-w-xl bg-[#FBF0EC] rounded-lg shadow-2xl p-space-xl mx-4 transform transition-transform duration-200 scale-100" id="add-category-modal-card">
+<!-- Modal Header -->
+<div class="flex items-center justify-between pb-space-sm mb-space-md">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-[#786d67] uppercase tracking-widest">New Schema Classification</span>
+<h3 class="font-headline-sm text-headline-sm text-[#0a0a0a] font-semibold">Add New Category</h3>
+</div>
+<button class="w-8 h-8 rounded-lg bg-[#ECDAD4] text-[#0a0a0a] flex items-center justify-center hover:bg-[#0a0a0a] hover:text-[#ECDAD4] transition-colors" id="close-add-modal-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Modal Form -->
+<form class="flex flex-col gap-space-md" id="add-category-form" onsubmit="event.preventDefault();"><div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md"><div class="flex flex-col gap-1"><label class="font-label-caps text-label-caps text-[#786d67] uppercase tracking-wider">Category Name</label><input class="w-full px-3 py-2 bg-[#ECDAD4]/50 rounded-lg text-body-md font-body-md text-[#0a0a0a] placeholder:text-[#786d67] focus:outline-none focus:bg-[#ECDAD4]" placeholder="e.g. Sculptural Partitions" required="" type="text"></div><div class="flex flex-col gap-1"><label class="font-label-caps text-label-caps text-[#786d67] uppercase tracking-wider">URL / Schema Slug</label><input class="w-full px-3 py-2 bg-[#ECDAD4]/50 rounded-lg text-body-md font-body-md text-[#0a0a0a] placeholder:text-[#786d67] focus:outline-none focus:bg-[#ECDAD4]" placeholder="/typology/partitions" required="" type="text"></div></div><div class="flex flex-col gap-1"><label class="font-label-caps text-label-caps text-[#786d67] uppercase tracking-wider">Architectural Description</label><textarea class="w-full px-3 py-2 bg-[#ECDAD4]/50 rounded-lg text-body-md font-body-md text-[#0a0a0a] placeholder:text-[#786d67] focus:outline-none focus:bg-[#ECDAD4]" placeholder="Define material boundaries, spatial usage, and scale envelope..." rows="2"></textarea></div><div class="flex flex-col gap-1.5"><div class="flex items-center justify-between"><label class="font-label-caps text-label-caps text-[#786d67] uppercase tracking-wider">Category Featured / Hero Image</label><span class="font-label-caps text-[9px] text-[#786d67] uppercase tracking-wider">Min 1200×800px · Max 15MB</span></div><div class="relative flex flex-col items-center justify-center p-space-lg rounded-lg border border-[#ECDAD4] bg-[#ECDAD4]/40 hover:bg-[#ECDAD4] transition-colors cursor-pointer group text-center"><input accept="image/png,image/jpeg,image/webp" class="absolute inset-0 opacity-0 cursor-pointer w-full h-full z-10" type="file"><div class="w-10 h-10 rounded-full bg-[#ECDAD4] flex items-center justify-center text-[#0a0a0a] mb-2 group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-[20px]">add_photo_alternate</span></div><p class="font-label-caps text-label-caps text-[#0a0a0a] uppercase tracking-wider font-semibold">Drop hero monograph image or browse</p><p class="font-body-md text-xs text-[#786d67] mt-0.5">Supports architectural high-res JPG, PNG, WEBP</p></div></div><div class="flex items-center justify-end gap-space-sm pt-space-sm mt-space-xs"><button class="px-4 py-2 rounded-lg bg-[#ECDAD4] text-[#0a0a0a] font-label-caps text-label-caps uppercase tracking-wider hover:bg-[#e2cecaa] transition-colors" id="cancel-modal-btn" type="button">Cancel</button><button class="px-5 py-2 rounded-lg bg-[#0a0a0a] text-[#ECDAD4] font-label-caps text-label-caps uppercase tracking-wider hover:bg-[#292524] transition-colors" id="save-category-btn" type="submit">Create Typology</button></div></form>
+</div>
+</div>
+<!-- Vanilla JavaScript for Modal and Live Search Micro-interactions -->
+<script>
+    (function() {
+      const modal = document.getElementById('add-category-modal');
+      const modalCard = document.getElementById('add-category-modal-card');
+      const openBtn = document.getElementById('open-add-modal-btn');
+      const closeBtn = document.getElementById('close-add-modal-btn');
+      const cancelBtn = document.getElementById('cancel-modal-btn');
+      const form = document.getElementById('add-category-form');
+      const searchInput = document.getElementById('typology-search-input');
+      const table = document.getElementById('typologies-table');
+
+      function openModal() {
+        modal.classList.remove('opacity-0', 'pointer-events-none');
+        modal.classList.add('opacity-100', 'pointer-events-auto');
+        modalCard.classList.remove('scale-95');
+        modalCard.classList.add('scale-100');
+      }
+
+      function closeModal() {
+        modal.classList.add('opacity-0', 'pointer-events-none');
+        modal.classList.remove('opacity-100', 'pointer-events-auto');
+        modalCard.classList.add('scale-95');
+        modalCard.classList.remove('scale-100');
+      }
+
+      if (openBtn) openBtn.addEventListener('click', openModal);
+      if (closeBtn) closeBtn.addEventListener('click', closeModal);
+      if (cancelBtn) cancelBtn.addEventListener('click', closeModal);
+
+      // Close modal on click outside
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+      });
+
+      // Submit form micro-interaction
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const saveBtn = document.getElementById('save-category-btn');
+          const originalText = saveBtn.innerText;
+          saveBtn.innerText = 'Registering Schema...';
+          saveBtn.disabled = true;
+
+          setTimeout(() => {
+            saveBtn.innerText = 'Saved!';
+            setTimeout(() => {
+              closeModal();
+              saveBtn.innerText = originalText;
+              saveBtn.disabled = false;
+              form.reset();
+            }, 500);
+          }, 600);
+        });
+      }
+
+      // Simple Table Search Filter
+      if (searchInput && table) {
+        searchInput.addEventListener('input', function() {
+          const query = this.value.toLowerCase().trim();
+          const rows = table.querySelectorAll('tbody tr');
+          rows.forEach((row) => {
+            const text = row.innerText.toLowerCase();
+            if (text.includes(query)) {
+              row.style.display = '';
+            } else {
+              row.style.display = 'none';
+            }
+          });
+        });
+      }
+    })();
+  </script>
+</div></main></div>
+
+
+<!-- BEGIN: Xadboom Unified Navigation & Cart Lock Engine -->
+<div id="xadboom-cart-drawer" style="display:none;position:fixed;top:0;right:0;bottom:0;width:100%;max-width:440px;background:#FFF8F6;box-shadow:-12px 0 40px rgba(35,26,22,0.2);z-index:100000;border-left:1px solid #D8C3BC;font-family:'DM Sans',sans-serif;color:#1C1917;flex-direction:column;">
+  <!-- Drawer Header -->
+  <div style="padding:18px 24px;border-bottom:1px solid #D8C3BC;display:flex;align-items:center;justify-content:space-between;background:#ECDAD4;">
+    <div style="display:flex;align-items:center;gap:10px;">
+      <span style="width:8px;height:8px;border-radius:50%;background:#0A0A0A;"></span>
+      <h3 style="margin:0;font-family:'Space Grotesk',monospace;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;">Allocation Bag &amp; Reservation</h3>
+    </div>
+    <button id="xadboom-cart-close" style="background:transparent;border:0;font-size:18px;cursor:pointer;color:#1C1917;padding:4px 8px;font-family:monospace;" aria-label="Close Bag">✕</button>
+  </div>
+
+  <!-- 15-Minute Reservation Lock Banner -->
+  <div id="xadboom-lock-banner" style="background:#FFF1EC;border-bottom:1px solid #E2CECB;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;">
+    <div style="display:flex;align-items:center;gap:8px;">
+      <span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#844C38;animation:pulse 1.5s infinite;"></span>
+      <span style="font-family:'Space Grotesk',monospace;font-size:10px;text-transform:uppercase;letter-spacing:0.08em;color:#844C38;font-weight:600;">15-MIN LOCK ACTIVE</span>
+    </div>
+    <div id="xadboom-countdown" style="font-family:'Space Grotesk',monospace;font-size:12px;font-weight:700;color:#0A0A0A;letter-spacing:0.08em;">
+      14:45
+    </div>
+  </div>
+
+  <!-- Drawer Body -->
+  <div id="xadboom-cart-items" style="flex:1;overflow-y:auto;padding:24px;">
+    <div style="border:1px solid #E2CECB;border-radius:12px;padding:16px;background:#FFF1EC;margin-bottom:16px;">
+      <div style="display:flex;gap:14px;align-items:start;">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwnCJLKLvhum3BMndM9-PH1frfIJppinysZwrLcPhUH0AV8GsVaqmZzF_M8GR6ESpCju6fnmTN7DFWKy-DiVCqZTxDLyhEPeC_IK_4w1soWZTFD96uhfpWmYlACXw6RMIu_Ap3-uZEyc31P9IHs_fpfl-sHnMMRmb6sBFJmXzGKlrdhEMF1NJT0AXLqQslhbsDqWiBXrgLGrfsPHfnJUGqunRKntyorrnZb5qlDbMt" style="width:72px;height:72px;object-fit:cover;border-radius:8px;border:1px solid #D8C3BC;">
+        <div style="flex:1;">
+          <span style="font-family:Space Grotesk,monospace;font-size:9px;color:#844C38;text-transform:uppercase;letter-spacing:0.1em;font-weight:700;display:block;">EDITION ALLOCATION</span>
+          <h4 style="margin:2px 0 4px;font-size:14px;font-weight:700;">Lumen Void Lounge Chair</h4>
+          <p style="margin:0;font-size:11px;color:#7A6E69;">Alireza Taghaboni · Solid Walnut &amp; Bouclé</p>
+          <div style="margin-top:8px;display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-family:Space Grotesk,monospace;font-size:10px;background:#0A0A0A;color:#fff;padding:2px 6px;border-radius:4px;">Ed. 03 / 12</span>
+            <span style="font-family:Space Grotesk,monospace;font-size:13px;font-weight:700;">$9,400</span>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:12px;padding-top:10px;border-top:1px dashed #D8C3BC;font-size:10.5px;color:#554B47;display:flex;align-items:center;gap:6px;">
+        <span>🛡️</span>
+        <span>Cryptographic Provenance Token: <strong>XB-PROV-LV-0312</strong></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Drawer Footer -->
+  <div style="padding:20px 24px;border-top:1px solid #D8C3BC;background:#FFF1EC;">
+    <div style="display:flex;justify-content:space-between;margin-bottom:8px;font-size:11px;font-family:'Space Grotesk',monospace;text-transform:uppercase;letter-spacing:0.06em;color:#7A6E69;">
+      <span>Atelier White-Glove Crate</span>
+      <span style="color:#0A0A0A;font-weight:600;">COMPLIMENTARY</span>
+    </div>
+    <div style="display:flex;justify-content:space-between;margin-bottom:16px;font-size:14px;font-weight:700;">
+      <span style="font-family:'Space Grotesk',monospace;text-transform:uppercase;letter-spacing:0.06em;">Total Acquisition</span>
+      <span id="xadboom-cart-total" style="font-family:'Space Grotesk',monospace;">$9,400</span>
+    </div>
+    <button id="xadboom-checkout-btn" style="width:100%;padding:14px;background:#0A0A0A;color:#FFF8F6;border:0;border-radius:9999px;font-family:'Space Grotesk',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;cursor:pointer;margin-bottom:8px;transition:opacity 0.2s;">
+      PROCEED TO ALLOCATION CHECKOUT ↗
+    </button>
+    <button id="xadboom-release-btn" style="width:100%;padding:8px;background:transparent;color:#7A6E69;border:0;font-family:'Space Grotesk',monospace;font-size:10px;text-transform:uppercase;letter-spacing:0.08em;cursor:pointer;">
+      Release Vault Lock Back to Inventory
+    </button>
+  </div>
+</div>
+<div id="xadboom-cart-backdrop" style="display:none;position:fixed;inset:0;background:rgba(28,25,23,0.4);backdrop-filter:blur(2px);z-index:99999;"></div>
+
+<!-- Quick Architectural Switcher Pill (Beneath Container Showing All 14 Pages) -->
+<div id="xadboom-quick-nav" style="position:fixed;bottom:14px;left:50%;transform:translateX(-50%);z-index:99998;font-family:'Space Grotesk',sans-serif;-webkit-font-smoothing:antialiased;max-width:96vw;">
+  <div style="box-shadow:0 8px 32px rgba(35,26,22,0.22);border:1px solid #D8C3BC;background:rgba(255,248,246,0.97);backdrop-filter:blur(16px);border-radius:9999px;padding:6px 14px;display:flex;align-items:center;gap:10px;overflow-x:auto;">
+    
+    <div style="display:flex;align-items:center;gap:7px;flex-shrink:0;">
+      <span style="width:7px;height:7px;border-radius:50%;background:#844C38;display:inline-block;"></span>
+      <span style="font-size:10.5px;font-family:'Space Grotesk',monospace;text-transform:uppercase;letter-spacing:0.12em;font-weight:700;color:#1C1917;">Xadboom</span>
+      <span style="font-size:9.5px;color:#7A6E69;font-family:monospace;background:#ECDAD4;padding:1px 6px;border-radius:4px;">Categories</span>
+    </div>
+
+    <div id="xadboom-nav-expanded" style="display:flex;align-items:center;gap:8px;border-left:1px solid #D8C3BC;padding-left:10px;flex-shrink:0;">
+      <div style="display:flex;align-items:center;gap:3px;">
+        <span style="font-size:9px;text-transform:uppercase;letter-spacing:0.08em;color:#7A6E69;font-family:monospace;margin-right:2px;">Store:</span>
+        <a href="../index.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Curated Home</a><a href="../curated_architectural_assets_physical_typologies_xadboom/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Typologies Catalog</a><a href="../lumen_void_lounge_chair_product_detail_xadboom/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Lumen Void Chair</a><a href="../designers_collaborating_visionaries_xadboom_1/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Visionaries (1)</a><a href="../designers_collaborating_visionaries_xadboom_2/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Visionaries (2)</a><a href="../contact_curatorial_inquiries_xadboom/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Curatorial Inquiries</a>
+      </div>
+      <div style="height:14px;width:1px;background:#D8C3BC;"></div>
+      <div style="display:flex;align-items:center;gap:3px;">
+        <span style="font-size:9px;text-transform:uppercase;letter-spacing:0.08em;color:#844C38;font-family:monospace;margin-right:2px;">Admin:</span>
+        <a href="../xadboom_atelier_admin_operations_inventory_lock_harmonized/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Operations & Ledger</a><a href="../pieces_catalog_xadboom_atelier_admin/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Pieces Catalog</a><a href="../add_new_piece_xadboom_atelier_admin/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">+ Add Piece</a><a href="../categories_typologies_xadboom_atelier_admin/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;background:#0A0A0A;color:#FFF8F6;font-weight:700;">Categories</a><a href="../designers_collaborators_xadboom_atelier_admin/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Collaborators</a><a href="../orders_dispatches_xadboom_atelier_admin/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Orders & Dispatches</a><a href="../inquiries_forms_xadboom_atelier_admin/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Inquiries & Forms</a><a href="../users_accounts_xadboom_atelier_admin/code.html" style="padding:3px 8px;border-radius:4px;font-size:10.5px;font-family:'Space Grotesk',monospace;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;white-space:nowrap;color:#4D4540;background:transparent;">Users & Accounts</a>
+      </div>
+    </div>
+
+    <!-- Bag Opener Pill -->
+    <button id="xadboom-open-cart-pill" style="background:#0A0A0A;color:#FFF8F6;border:0;border-radius:9999px;padding:3px 10px;font-size:10px;font-family:monospace;font-weight:700;letter-spacing:0.06em;cursor:pointer;display:flex;align-items:center;gap:4px;flex-shrink:0;">
+      <span>BAG</span>
+      <span id="xadboom-pill-cart-count" style="background:#844C38;border-radius:50%;padding:1px 5px;font-size:9px;">1</span>
+    </button>
+
+    <button id="xadboom-nav-toggle" style="background:#ECDAD4;border:1px solid #D8C3BC;border-radius:9999px;padding:3px 8px;font-size:10px;font-family:monospace;cursor:pointer;color:#1C1917;font-weight:600;flex-shrink:0;" title="Toggle Bar">
+      ▾
+    </button>
+  </div>
+</div>
+
+<script>
+(function() {
+  // Navigation Bar Collapse Toggle
+  var expanded = document.getElementById('xadboom-nav-expanded');
+  var toggle = document.getElementById('xadboom-nav-toggle');
+  if (toggle && expanded) {
+    var isCollapsed = localStorage.getItem('xadboom_nav_collapsed') === 'true';
+    if (isCollapsed) {
+      expanded.style.display = 'none';
+      toggle.innerText = '▴ All Pages';
+    }
+    toggle.addEventListener('click', function() {
+      if (expanded.style.display === 'none') {
+        expanded.style.display = 'flex';
+        toggle.innerText = '▾';
+        localStorage.setItem('xadboom_nav_collapsed', 'false');
+      } else {
+        expanded.style.display = 'none';
+        toggle.innerText = '▴ All Pages';
+        localStorage.setItem('xadboom_nav_collapsed', 'true');
+      }
+    });
+  }
+
+  // Cart Drawer Logic
+  var drawer = document.getElementById('xadboom-cart-drawer');
+  var backdrop = document.getElementById('xadboom-cart-backdrop');
+  var closeBtn = document.getElementById('xadboom-cart-close');
+  var openPill = document.getElementById('xadboom-open-cart-pill');
+  var countdownEl = document.getElementById('xadboom-countdown');
+  var itemsContainer = document.getElementById('xadboom-cart-items');
+  var totalEl = document.getElementById('xadboom-cart-total');
+  var pillCount = document.getElementById('xadboom-pill-cart-count');
+  var checkoutBtn = document.getElementById('xadboom-checkout-btn');
+  var releaseBtn = document.getElementById('xadboom-release-btn');
+
+  function openCart() {
+    if (drawer && backdrop) {
+      drawer.style.display = 'flex';
+      backdrop.style.display = 'block';
+    }
+  }
+
+  function closeCart() {
+    if (drawer && backdrop) {
+      drawer.style.display = 'none';
+      backdrop.style.display = 'none';
+    }
+  }
+
+  if (closeBtn) closeBtn.addEventListener('click', closeCart);
+  if (backdrop) backdrop.addEventListener('click', closeCart);
+  if (openPill) openPill.addEventListener('click', openCart);
+
+  // Hook all existing "Bag" buttons in headers
+  document.querySelectorAll('button, a').forEach(function(el) {
+    var txt = (el.innerText || '').toLowerCase();
+    if (txt.includes('bag') && !el.id.includes('xadboom')) {
+      el.addEventListener('click', function(e) {
+        e.preventDefault();
+        openCart();
+      });
+    }
+  });
+
+  // 15-Minute Countdown Timer
+  var remainingSeconds = 885;
+  setInterval(function() {
+    if (remainingSeconds > 0) {
+      remainingSeconds--;
+      var m = Math.floor(remainingSeconds / 60);
+      var s = remainingSeconds % 60;
+      if (countdownEl) {
+        countdownEl.innerText = (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s;
+      }
+    } else {
+      if (countdownEl) countdownEl.innerText = '00:00 (EXPIRED)';
+    }
+  }, 1000);
+
+  // Release lock
+  if (releaseBtn) {
+    releaseBtn.addEventListener('click', function() {
+      if (itemsContainer) {
+        itemsContainer.innerHTML = '<div style="text-align:center;padding:40px 10px;color:#7A6E69;font-family:monospace;font-size:12px;">ALLOCATION HOLD RELEASED BACK TO VAULT.<br><br><button onclick="location.reload()" style="padding:8px 16px;background:#0A0A0A;color:#fff;border-radius:9999px;border:0;font-size:11px;cursor:pointer;">RESERVE ANOTHER PIECE ↗</button></div>';
+      }
+      if (totalEl) totalEl.innerText = '$0';
+      if (pillCount) pillCount.innerText = '0';
+    });
+  }
+
+  // Checkout action
+  if (checkoutBtn) {
+    checkoutBtn.addEventListener('click', function() {
+      checkoutBtn.innerText = 'DISPATCHING TO LEDGER...';
+      setTimeout(function() {
+        if (itemsContainer) {
+          itemsContainer.innerHTML = 
+            '<div style="text-align:center;padding:30px 10px;">' +
+              '<div style="width:48px;height:48px;border-radius:50%;background:#0A0A0A;color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:22px;">✓</div>' +
+              '<h4 style="font-family:Space Grotesk,monospace;font-size:15px;margin:0 0 8px;text-transform:uppercase;">ACQUISITION CONFIRMED</h4>' +
+              '<p style="font-size:12px;color:#7A6E69;line-height:1.5;">Order: XB-DISPATCH-948210<br>Certificate: PROV-CERT-LV0312</p>' +
+              '<p style="font-size:11px;background:#FFF1EC;padding:10px;border-radius:8px;border:1px solid #D8C3BC;margin-top:16px;">Curatorial crate scheduled for dual-signed courier dispatch. Provenance ledger synchronized.</p>' +
+            '</div>';
+        }
+        if (totalEl) totalEl.innerText = '$0';
+        if (pillCount) pillCount.innerText = '0';
+        checkoutBtn.style.display = 'none';
+        if (releaseBtn) releaseBtn.style.display = 'none';
+      }, 500);
+    });
+  }
+
+  // Hook "ACQUIRE / RESERVE" buttons
+  document.querySelectorAll('button, a').forEach(function(el) {
+    var txt = (el.innerText || '').toLowerCase();
+    if (txt.includes('acquire') || txt.includes('reserve') || txt.includes('the collection') || txt.includes('take allocation')) {
+      if (el.getAttribute('href') && (el.getAttribute('href').includes('catalog') || el.getAttribute('href').startsWith('#'))) return;
+      el.addEventListener('click', function(e) {
+        e.preventDefault();
+        openCart();
+      });
+    }
+  });
+
+  // Client-side Architectural Spec Download (CSV & OBJ generator)
+  function downloadFile(content, fileName, mimeType) {
+    var blob = new Blob([content], { type: mimeType });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = fileName;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }
+
+  document.querySelectorAll('button, a').forEach(function(el) {
+    var txt = (el.innerText || '').toLowerCase();
+    if (txt.includes('spec') || txt.includes('3d') || txt.includes('tear sheet')) {
+      if (!el.getAttribute('href') || el.getAttribute('href') === '#' || el.getAttribute('href').startsWith('#spec')) {
+        el.addEventListener('click', function(e) {
+          e.preventDefault();
+          var csv = "XADBOOM CURATED INTERIOR ARCHITECTURE — SPECIFICATION SHEET\n" +
+            "Archive ID,LV-0312\n" +
+            "Piece Title,Lumen Void Lounge Chair\n" +
+            "Collaborating Architect,Alireza Taghaboni\n" +
+            "Affiliated Studio,NextOffice\n" +
+            "Typology,Seating & Lounges\n" +
+            "Materials / Substrates,Solid Carved Iranian Walnut & Bouclé Wool\n" +
+            "Standard Dimensions,840 × 920 × 760 mm\n" +
+            "Net Weight,28 kg\n" +
+            "Textile Martindale Rating,65000 Cycles\n" +
+            "Edition Run,03 / 12 (3 Available)\n" +
+            "Atelier Crate Logistics,Rigid Plywood Museum Crate / Shockwatch Monitored\n" +
+            "Provenance Node,Tehran Atelier / Zurich Vault\n" +
+            "Standards,ISO 9001 / BIM 3D Lightweight Compatible (.OBJ / .GLB)\n";
+          downloadFile(csv, "Xadboom_Spec_LV0312_Lumen_Void.csv", "text/csv");
+        });
+      }
+    }
+  });
+
+  // Client-side Contact & Inquiry form submission with feedback
+  document.querySelectorAll('form').forEach(function(form) {
+    form.addEventListener('submit', function(e) {
+      var emailInput = form.querySelector('input[type="email"]');
+      if (emailInput && !form.getAttribute('action')) {
+        e.preventDefault();
+        var submitBtn = form.querySelector('button[type="submit"]') || form.querySelector('button');
+        var originalText = submitBtn ? submitBtn.innerText : 'Submit';
+        if (submitBtn) submitBtn.innerText = 'REGISTERING INQUIRY...';
+        setTimeout(function() {
+          if (submitBtn) submitBtn.innerText = '✓ INQUIRY REGISTERED (SLA: 3H)';
+          alert('Your curatorial inquiry has been registered with the Xadboom Atelier desk. Reference: INQ-2026. Curator SLA response time: 3 hours.');
+          if (submitBtn) submitBtn.innerText = originalText;
+        }, 400);
+      }
+    });
+  });
+
+  // Wire Admin Sidebar relative links so they work on GitHub Pages
+  var rootRel = '../';
+  document.querySelectorAll('nav [data-path]').forEach(function(el) {
+    var p = el.getAttribute('data-path');
+    var map = {
+      'overview': rootRel + 'xadboom_atelier_admin_operations_inventory_lock_harmonized/code.html',
+      'pieces-catalog': rootRel + 'pieces_catalog_xadboom_atelier_admin/code.html',
+      'curatorial-archives': rootRel + 'categories_typologies_xadboom_atelier_admin/code.html',
+      'acquisitions': rootRel + 'orders_dispatches_xadboom_atelier_admin/code.html',
+      'provenance-records': rootRel + 'inquiries_forms_xadboom_atelier_admin/code.html',
+      'settings': rootRel + 'users_accounts_xadboom_atelier_admin/code.html'
+    };
+    if (map[p]) el.setAttribute('href', map[p]);
+  });
+
+  document.querySelectorAll('aside a, nav a').forEach(function(a) {
+    var txt = (a.innerText || '').trim();
+    if (txt.includes('Overview & Dashboard')) a.setAttribute('href', rootRel + 'xadboom_atelier_admin_operations_inventory_lock_harmonized/code.html');
+    else if (txt.includes('Pieces Catalog')) a.setAttribute('href', rootRel + 'pieces_catalog_xadboom_atelier_admin/code.html');
+    else if (txt.includes('Categories')) a.setAttribute('href', rootRel + 'categories_typologies_xadboom_atelier_admin/code.html');
+    else if (txt.includes('Designers & Collaborators')) a.setAttribute('href', rootRel + 'designers_collaborators_xadboom_atelier_admin/code.html');
+    else if (txt.includes('Orders & Dispatches')) a.setAttribute('href', rootRel + 'orders_dispatches_xadboom_atelier_admin/code.html');
+    else if (txt.includes('Users & Accounts')) a.setAttribute('href', rootRel + 'users_accounts_xadboom_atelier_admin/code.html');
+    else if (txt.includes('Inquiries & Forms')) a.setAttribute('href', rootRel + 'inquiries_forms_xadboom_atelier_admin/code.html');
+  });
+
+  // Wire "+ Add New Piece" button
+  document.querySelectorAll('button, a').forEach(function(btn) {
+    var txt = (btn.innerText || '').trim();
+    if (txt.includes('Add New Piece')) {
+      btn.style.cursor = 'pointer';
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.location.href = rootRel + 'add_new_piece_xadboom_atelier_admin/code.html';
+      });
+    }
+  });
+
+  // Direct piece card clicks to product detail page
+  document.querySelectorAll('[data-purpose="product-card"], article').forEach(function(card) {
+    var txt = card.innerText || '';
+    if (txt.includes('Lumen Void Lounge Chair')) {
+      card.style.cursor = 'pointer';
+      card.addEventListener('click', function(e) {
+        if (!e.target.closest('a') && !e.target.closest('button')) {
+          window.location.href = rootRel + 'lumen_void_lounge_chair_product_detail_xadboom/code.html';
+        }
+      });
+    }
+  });
+})();
+</script>
+<!-- END: Xadboom Unified Navigation & Cart Lock Engine -->
+</body></html>
